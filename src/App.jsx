@@ -4,13 +4,15 @@ import Header from "./Components/Header";
 import MainHeader from "./Components/MainHeader";
 import Qualities from "./Components/Qualities";
 import BotMessage from "./Components/BotMessage";
+import AllRounds from "./Components/allrouds";
 function App() {
   return (
     <>
       <Header />
       <MainHeader />
       <Qualities />
-      <BotMessage/>
+      <AllRounds />
+      <BotMessage />
     </>
   );
 }
