@@ -1,0 +1,16 @@
+img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+p {
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+.oneRound {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
