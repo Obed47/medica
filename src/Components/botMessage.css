@@ -22,7 +22,10 @@
 }
 
 .main-container .container{
+    border: 1px solid red;
     height: 65%;
+    grid-column: 2/4;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
