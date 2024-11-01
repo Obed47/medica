@@ -5,6 +5,8 @@ import MainHeader from "./Components/MainHeader";
 import Qualities from "./Components/Qualities";
 import BotMessage from "./Components/BotMessage";
 import AllRounds from "./Components/allrouds";
+import Collaborators from "./Components/Collaborators";
+
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
       <Qualities />
       <AllRounds />
       <BotMessage />
+      {/*<Collaborators />*/}
     </>
   );
 }

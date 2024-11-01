@@ -1,38 +1,48 @@
 
 .main-container{
     color: #fff;
+    background-color: rgba(89, 52, 255, 0.562);
+    border-radius: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.main-container .content{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     gap: 1em;
     align-items: center;
     justify-content: center;
+    flex: none;
     padding: 3em;
-    border-radius: 2em;
-    background-color: rgb(156, 171, 255);
 }
+
 
 .main-container img{
     width: 20em;
     height: 20em;
     background-color: azure;
-    padding: 2em;
+    padding: 1em;
     border-radius: 2em;
     border: 2px solid #ececec;
     background: linear-gradient(rgba(240, 240, 240, 0.932), rgba(219, 219, 219, 0.685));
 }
 
 .main-container .container{
-    height: 65%;
+    height: 75%;
     grid-column: 2/4;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1em;
 }
 
 .main-container .container p{
+    width: 100%;
     font-weight: 900;
     font-size: larger;
+    text-align: justify;
 }
 
 .main-container .container button{
