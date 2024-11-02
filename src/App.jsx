@@ -6,8 +6,10 @@ import Qualities from "./Components/Qualities";
 import BotMessage from "./Components/BotMessage";
 import AllRounds from "./Components/allrouds";
 import Collaborators from "./Components/Collaborators";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <>
       {/* note that this is just to test. We will rende these components conditionally */}
