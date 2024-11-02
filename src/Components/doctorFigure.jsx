@@ -3,7 +3,7 @@ import "./doctorFigure.css";
 
 const DoctorFigure = ({ background, name, post }) => {
   return (
-    <div className="container" style={style}>
+    <div className="container">
       <div className="infos">
         <p className="name">{name}</p>
         <p className="profession">{post}</p>
@@ -11,5 +11,4 @@ const DoctorFigure = ({ background, name, post }) => {
     </div>
   );
 };
-
 export default DoctorFigure;
