@@ -8,7 +8,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className="message">
+            <div className="messages">
                 <div>
                     Fill in info about your symtoms,<br/>
                     heriditary illnesses and others<br/>

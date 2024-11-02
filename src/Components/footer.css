@@ -9,15 +9,15 @@
     padding: 2em 3em 1em 3em;
 }
 
-.footer .message{
-    width: 100%;
+.footer .messages{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3em;
 }
 
-.footer .message div{
+.footer .messages div{
     text-align: justify;
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 20%;
+    width: 22%;
 }
 
 .socials-medias .images {

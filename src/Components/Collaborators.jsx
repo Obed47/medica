@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import DoctorFigure from './doctorFigure';
 import dr1 from '../assets/dr1.png'
 import dr2 from '../assets/dr2.png'
@@ -7,19 +7,6 @@ import dr4 from '../assets/dr4.png'
 import './collaborators.css'
 
 const Collaborators = () => {
-
-    useEffect(()=>{
-
-        let scroll = document.querySelector(".scroll")
-        let figures = document.querySelector(".figures")
-
-        scroll.style.scrollBehavior = "smooth"
-        scroll.scrollLeft = 20
-        figures.addEventListener("wheel",(event)=>{
-            scroll.scrollLeft = event.deltaX;
-        })
-
-    })
 
     return (
         <div className='collaborators-container'>
