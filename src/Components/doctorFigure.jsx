@@ -1,10 +1,7 @@
 import React from "react";
+import "./doctorFigure.css";
 
-const DrFigure = ({ background, name, post }) => {
-  const style = {
-    backgroundImage: url({ background }),
-  };
-
+const DoctorFigure = ({ background, name, post }) => {
   return (
     <div className="container" style={style}>
       <div className="infos">
@@ -15,4 +12,4 @@ const DrFigure = ({ background, name, post }) => {
   );
 };
 
-export default DrFigure;
+export default DoctorFigure;
