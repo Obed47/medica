@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import DrFigure from "./DrFigure";
+import DoctorFigure from "./doctorFigure";
 import dr1 from "../assets/dr1.png";
 import dr2 from "../assets/dr2.png";
 import dr3 from "../assets/dr3.png";
@@ -7,38 +7,30 @@ import dr4 from "../assets/dr4.png";
 import "./collaborators.css";
 
 const Collaborators = () => {
-  useEffect(() => {
-    let scroll = document.querySelector(".scroll");
-    let figures = document.querySelector(".figures");
-
-    scroll.style.scrollBehavior = "smooth";
-    scroll.scrollLeft = 20;
-    figures.addEventListener("wheel", (event) => {
-      scroll.scrollLeft = event.deltaX;
-    });
-  });
+  
+  
 
   return (
     <div className="collaborators-container">
       <h1>In Collaboration With Highly Trained Medical personnel</h1>
       <div className="scroll">
         <div className="figures">
-          <DrFigure
+          <DoctorFigure
             background={dr1}
             name={"Dr Kalera H"}
             post={"Ophtamologist"}
           />
-          <DrFigure
+          <DoctorFigure
             background={dr4}
             name={"Dr Kalera H"}
             post={"Ophtamologist"}
           />
-          <DrFigure
+          <DoctorFigure
             background={dr3}
             name={"Dr Kalera H"}
             post={"Ophtamologist"}
           />
-          <DrFigure
+          <DoctorFigure
             background={dr2}
             name={"Dr Kalera H"}
             post={"Ophtamologist"}
