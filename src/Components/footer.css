@@ -1,0 +1,48 @@
+.footer{
+    background-color: rgb(8, 4, 0);
+    color: #a1a1a1;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 3em 1em 3em;
+}
+
+.footer .message{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.footer .message div{
+    text-align: justify;
+}
+
+.socials-medias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+
+.socials-medias .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 0.25em;
+}
+
+.socials-medias .images img{
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.socials-medias .copyright{
+    width: 90%;
+    padding: 0 2px 0 2px;
+}
