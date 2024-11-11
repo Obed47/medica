@@ -1,0 +1,143 @@
+
+.formLogin{
+    width: max-content;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5em;
+    padding: 2em;
+}
+
+.formLogin h1{
+    font-size: 2.5em;
+    align-self: center;
+}
+
+.formLogin h5{
+    text-align: center;
+    font-weight:400 ;
+    margin-bottom: 2em;
+}
+
+.formLogin a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(12, 0, 175);
+}
+
+/*------------------    FORM    -------------------------*/
+
+.formLogin form{
+    box-sizing: border-box;
+    display: grid;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 12em 12em;
+    margin-bottom: 2em;
+    
+}
+
+.formLogin form input[type='text']{
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    background-color: rgba(145, 145, 145, 0.541);
+    padding: 0.75em 1.5em 0.75em 0.5em;
+}
+
+
+/*A revoir*/
+.formLogin form input[type='text']:nth-child(2){
+    width: 13.6em;
+}
+
+.formLogin form input[type='email']{
+    grid-column: 1/4;
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    background-color: rgba(145, 145, 145, 0.541);
+    padding: 0.75em 0.5em 0.75em 0.5em;
+}
+
+.formLogin form span{
+    grid-column: 1/4;
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    background-color: rgba(145, 145, 145, 0.541);
+    padding: 0 0.25em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formLogin form span img{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+}
+
+.formLogin form input[type='password']{
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    background-color: transparent;
+    padding: 0.75em 0.5em 0.75em 0.5em;
+    width: 25em;
+}
+
+.formLogin form input[type='submit']{
+    grid-column: 1/4;
+    border: 0;
+    outline: 0;
+    border-radius: 0.2em;
+    background-color: rgb(12, 0, 175);
+    padding: 0.75em 0.5em 0.75em 0.5em;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+/*------------------    SIGN UP    -------------------------*/
+
+.formLogin .signUp{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.formLogin .signUp hr{
+    width:  25%;
+    color: rgb(194, 194, 194);
+}
+
+.formLogin .options{
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.formLogin .options a img{
+    width: 2em;
+    height: 2em;
+}
+
+.formLogin .options a {
+    color: black;
+    font-weight: 500;
+    width: 40%;
+    border: 1px solid blue;
+    outline: 0;
+    border-radius: 0.5em;
+    background-color: transparent;
+    padding: 0.5em 1em 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
