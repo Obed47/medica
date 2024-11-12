@@ -4,8 +4,8 @@
     border: 2px solid rgba(168, 148, 255, 0.925);
     outline: 0;
     border-radius: 0.5em;
-    background: linear-gradient(rgba(255, 255, 255, 0),rgba(117, 104, 104, 0.342),rgba(24, 24, 24, 0.658));
-    background-size: cover;
+    /*background: linear-gradient(rgba(255, 255, 255, 0),rgba(117, 104, 104, 0.342),rgba(24, 24, 24, 0.658));
+    */background-size: cover;
     background-position: center;
     display: flex;
     align-items: last baseline;
