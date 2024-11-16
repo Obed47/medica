@@ -1,15 +1,15 @@
-import React from 'react';
-import "./loginPage.css"
-import BotMessage from './botMessage';
-import FormLogin from './formLogin';
+import React from "react";
+import "./loginPage.css";
+import BotMessage from "./botMessage";
+import FormLogin from "./formLogin";
 
 const LoginPage = () => {
-    return (
-        <div className='login'>
-            <BotMessage/>
-            <FormLogin/>
-        </div>
-    );
+  return (
+    <div className="login">
+      <BotMessage />
+      <FormLogin />
+    </div>
+  );
 };
 
 export default LoginPage;
