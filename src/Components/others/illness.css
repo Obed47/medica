@@ -1,0 +1,20 @@
+.illness{
+    display: flex;
+    align-items: center;
+    margin: 0.75em 0 0.75em 0;
+
+}
+
+.illness input{
+    border: 0;
+    outline: 0;
+    padding: 1.5em 8.5em 1.5em 1em;
+    border-radius: 10px;
+    background-color: #d6d6d6d5;
+    margin-right: 0.5em;
+}
+
+.illness img{
+    width: 3em;
+    height: 3em;
+}

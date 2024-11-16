@@ -36,10 +36,6 @@ const FormLogin = () => {
                     <img src={google} alt="google" />
                     <span>Google</span>
                 </NavLink>
-                <NavLink>
-                    <img src={apple} alt="apple" />
-                    <span>Apple</span>
-                </NavLink>
             </div>
 
         </div>

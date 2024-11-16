@@ -1,0 +1,24 @@
+:root{
+    --first-green:#0c4139;
+    --second-green: #07725E;
+    --third-green: #00c39a;
+    --maroon: #e6cd70;
+    --black: #121418;
+}
+
+.bot-image{
+    border: 2px solid #969696;
+    width: 25%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    backdrop-filter: blur(50px); 
+}
+
+.bot-image img{
+    width: 18em;
+    height: 18em;
+}
+
