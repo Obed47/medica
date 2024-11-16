@@ -1,22 +1,33 @@
 
+@font-face {
+    font-family: "poppins";
+    src: url("../assets/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'poppins-m';
+    src: url("../assets/Poppins-Medium.ttf");
+}
+
 .formLogin{
     width: max-content;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 5em;
-    padding: 2em;
+    margin-right: 2em;
+    padding: 1em;
 }
 
 .formLogin h1{
-    font-size: 2.5em;
+    font-size: 2.75em;
     align-self: center;
+    font-family: "poppins-m";
 }
 
 .formLogin h5{
     text-align: center;
-    font-weight:400 ;
+    font-weight:600 ;
     margin-bottom: 2em;
 }
 
@@ -29,46 +40,45 @@
 /*------------------    FORM    -------------------------*/
 
 .formLogin form{
+    width: 30em;
     box-sizing: border-box;
     display: grid;
     gap: 1em;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 12em 12em;
+    grid-template-columns: 14em 14em;
+    grid-template-rows: 3.5em;
     margin-bottom: 2em;
     
 }
 
-.formLogin form input[type='text']{
+.formLogin form input::placeholder{
+    font-weight: 400;
+    color: black;
+    font-size: 1.25em;
+    
+}
+
+.formLogin form input{
+    padding: 0.5em 0 0.5em 1em;
+    height: 3em;
+    background-color: rgba(206, 202, 202, 0.541);
     border: 0;
     outline: 0;
-    border-radius: 0.2em;
-    background-color: rgba(145, 145, 145, 0.541);
-    padding: 0.75em 1.5em 0.75em 0.5em;
+    border-radius: 0.75em;
 }
 
-
-/*A revoir*/
 .formLogin form input[type='text']:nth-child(2){
-    width: 13.6em;
+    grid-column: 2/4;
 }
-
 .formLogin form input[type='email']{
     grid-column: 1/4;
-    border: 0;
-    outline: 0;
-    border-radius: 0.2em;
-    background-color: rgba(145, 145, 145, 0.541);
-    padding: 0.75em 0.5em 0.75em 0.5em;
+    border-radius: 0.75em;
 }
 
 .formLogin form span{
     grid-column: 1/4;
-    border: 0;
-    outline: 0;
-    border-radius: 0.2em;
-    background-color: rgba(145, 145, 145, 0.541);
-    padding: 0 0.25em 0 0;
+    border-radius: 0.75em;
+    background-color: rgba(206, 202, 202, 0.541);
+    padding: 0 0.75em 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,23 +91,18 @@
 }
 
 .formLogin form input[type='password']{
-    border: 0;
-    outline: 0;
-    border-radius: 0.2em;
+    border-radius: 0.75em;
     background-color: transparent;
-    padding: 0.75em 0.5em 0.75em 0.5em;
-    width: 25em;
+    padding: 0.5em 0 0.5em 1em;
+    width: 100%;
 }
 
 .formLogin form input[type='submit']{
     grid-column: 1/4;
-    border: 0;
-    outline: 0;
-    border-radius: 0.2em;
-    background-color: rgb(12, 0, 175);
-    padding: 0.75em 0.5em 0.75em 0.5em;
+    background-color: rgba(17, 0, 255, 0.849);
     color: aliceblue;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 /*------------------    SIGN UP    -------------------------*/
@@ -119,7 +124,7 @@
     width: 100%;
     display: flex;
     align-items: top;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .formLogin .options a img{
