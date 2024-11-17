@@ -15,6 +15,8 @@
 }
 
 .allergie img{
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
+    background-color:  rgb(241, 64, 64);
+    border-radius: 50%;
 }
