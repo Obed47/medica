@@ -4,7 +4,7 @@ import add from "../../assets/add-btn.png";
 import Illness from "./illness";
 
 const Inherited = () => {
-  const [inherited, setInherited] = useState(["hello"]);
+  const [inherited, setInherited] = useState([]);
   const [currentIllness, setCurrentIllness] = useState("");
 
   const deleteIllness = (toRemove) => {

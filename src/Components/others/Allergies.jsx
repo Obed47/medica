@@ -8,13 +8,12 @@ const Allergies = () => {
   const [currentAllergy, setCurrentAllergy] = useState("");
   const AddAllergy = (allergy) => {
     console.log(allergies);
-    if(currentAllergy.length!=0){
-        setAllergies([...allergies, allergy]);
+    if (currentAllergy.length != 0) {
+      setAllergies([...allergies, allergy]);
+    } else {
+      alert("Cant add empty allergy");
     }
-    else{
-        alert('Cant add empty allergy')
-    }
-    
+
     setCurrentAllergy("");
   };
   const removeAlergy = (alergy) => {
@@ -41,7 +40,7 @@ const Allergies = () => {
         <div className="button">
           <input
             type="text"
-            placeholder='Enter allergy'
+            placeholder="Enter allergy"
             onChange={handleChange}
           />
           <button onClick={() => AddAllergy(currentAllergy)}>
