@@ -1,0 +1,12 @@
+{
+    "first_name": "Lea",
+    "last_name": "Dassi",
+    "date_naissance": "2024-11-07",
+    "maladie_hereditaire": "Autre",
+    "allergies": "toto,tata,maman,papa",
+    "add_email": "ldassijustine@gmail.com",
+    "username": "Dassi",
+    "password": "12345",
+    "password1": "12345"
+}
+

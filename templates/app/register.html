@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+
+{% block content%}
+
+
+
+<h4>S'enreigister ici</h4>
+
+{% for message in messages %}
+
+<strong>{{message}}</strong>
+
+{% endfor %}
+
+<form method="post" action="/register">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" placeholder="enter your username " value="{{username}}" required>
+    <br><br>
+
+    <label for="firstname">firstname</label>
+    <input type="text" name="firstname" id="firstname" placeholder="enter your firstname" value="{{firstname}}" required>
+    <br><br>
+
+    <label for="lastname">lastname</label>
+    <input type="text" name="lastname" id="lastname" placeholder="enter your lastname " value="lastname" required >
+    <br><br>
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <label for="Datede_Naissance">Date de Naissance</label>
+    <input type="date" name="Datede_Naissance" id="Datede_Naissance" placeholder="enter your Date de Naissance " value="Datede_Naissance" required>
+    <br><br>
+
+
+    <label for="allergies">Allergies :</label>
+    <input type="text" name="allergies" id="allergies" placeholder="Entrez vos allergies séparées par des virgules" value="{{allergies }}">
+    <br><br>
+
+    <label for="maladie_hereditaire">Maladies héréditaires</label>
+    <select name="maladie_hereditaire" id="maladie_hereditaire" value="maladie_hereditaire">
+        <option value="">Sélectionnez une maladie héréditaire</option>
+        <option value="Diabète" {% if request.POST.maladie_hereditaire == "Diabète" %}selected{% endif %}>Diabète</option>
+        <option value="Hypertension" {% if request.POST.maladie_hereditaire == "Hypertension" %}selected{% endif %}>Hypertension</option>
+        <option value="Cancer" {% if request.POST.maladie_hereditaire == "Cancer" %}selected{% endif %}>Cancer</option>
+        <option value="Autre" {% if request.POST.maladie_hereditaire == "Autre" %}selected{% endif %}>Autre</option>
+    </select>
+    <br><br>
+
+
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="Email" placeholder="enter your Email "required>
+    <br><br>
+
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" placeholder="enter your password "required>
+    <br><br>
+
+    <label for="password1">password1</label>
+    <input type="password" name="password1" id="password1" placeholder="enter your password confirm "required>
+    <br><br>
+
+    <button type="submit">Enreigister</button>
+
+</form>
+
+
+
+{%endblock%}

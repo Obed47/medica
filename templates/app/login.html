@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+<h2>Se Connecter ici</h2>
+
+{% for message in messages %}
+
+<strong>{{message}}</strong>
+
+{% endfor %}
+
+<form method="post" action="/login">
+
+    {% csrf_token%}
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Entrez votre email" value="{{email}}" required>
+    <br><br>
+
+    <label for="password">password</label>
+    <input type="password" name="password" id="password" placeholder="enter your password " value="{{emal}}" required> 
+    <br><br>
+    <button type="submit">Connecter</button>
+</form>
+
+<p>
+    <a href="{% url 'password_reset' %}">Mot de passe oublie?</a>
+</p>
+
+{% endblock %}

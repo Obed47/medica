@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+
+{% for message in messages %}
+
+<strong>{{message}}</strong>
+
+{% endfor %}
+
+{% if user.is_authenticated  %}
+{% csrf_token %}
+<h3> bonjour {{firstname}} Bienvenue sur stefan medica</h3>
+<a href="/logout">
+    <button type="button">Se Déconnecter</button>
+</a>
+{% else %}
+
+<button type="submit"><a href="/register">S'enreigistrer</a></button>
+<button type="submit"><a href="/login">Se Connecter</a></button>
+
+{% endif %}
+
+{%endblock%}
