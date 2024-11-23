@@ -1,4 +1,3 @@
-import React from "react";
 import "./loginPage.css";
 import BotMessage from "./botMessage";
 import FormLogin from "./formLogin";
