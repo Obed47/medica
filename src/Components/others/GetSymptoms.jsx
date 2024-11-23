@@ -3,6 +3,7 @@ import "./getSymptoms.css"
 import BotImage from './BotImage';
 import Allergies from './Allergies';
 import Inherited from './Inherited';
+import validate from '../../assets/validate.png'
 
 
 const GetSymptoms = () => {
@@ -18,6 +19,10 @@ const GetSymptoms = () => {
                 </h3>
                 <Allergies/>
                 <Inherited/>
+                <button type="submit" className='submit'>
+                    <img src={validate} alt="proceed"/>
+                    <span>Proceed</span>
+                </button>
             </div>
         </div>
     );

@@ -18,6 +18,8 @@
 .getSymptoms .get{
     padding-top: 2em;
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .getSymptoms .get h1,h3{
@@ -34,4 +36,30 @@
     font-size: 20px;
     font-weight: 500;
 
+}
+
+.getSymptoms .submit{
+    margin-right: 5%;
+    margin-top: 2em;
+    align-self: end;
+    width: 10em;
+    height: 4em;
+    background: rgb(108, 108, 241);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    border: 0;
+    outline: 0;
+    box-shadow: -1px 3px 5px rgb(117, 117, 117);
+}
+
+.getSymptoms .submit img{
+    width: 2em;
+    height: 2em;
+}
+
+.getSymptoms .submit span{
+    font-weight: 800;
 }
