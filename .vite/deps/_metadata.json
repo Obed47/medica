@@ -1,25 +1,25 @@
 {
-  "hash": "c0960764",
+  "hash": "2a9e677b",
   "configHash": "226c8084",
-  "lockfileHash": "5307ad3b",
-  "browserHash": "b9d8856c",
+  "lockfileHash": "bf01fdd9",
+  "browserHash": "190f7a86",
   "optimized": {
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "4410ae23",
+      "fileHash": "30aaf9cb",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "58f57736",
+      "fileHash": "4d4b8976",
       "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "ae194d32",
+      "fileHash": "a1875d8e",
       "needsInterop": true
     }
   },
