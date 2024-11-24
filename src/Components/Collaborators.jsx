@@ -5,11 +5,7 @@ import dr2 from "../assets/dr2.png";
 import dr3 from "../assets/dr3.png";
 import dr4 from "../assets/dr4.png";
 import "./collaborators.css";
-import DoctorFigure from "./doctorFigure";
 const Collaborators = () => {
-  
-  
-
   return (
     <div className="collaborators-container">
       <h1>In Collaboration With Highly Trained Medical personnel</h1>
