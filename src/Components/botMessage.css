@@ -6,9 +6,9 @@
 
 .botMessage{
     width: 50%;
-    height: 120vh;
+    height: 110vh;
     background: url('../assets/bot-login.png');
-    background-size: 75em;
+    background-size: 65em;
     background-position: center;
     border-radius: 0.5em;
     border-top-right-radius: 10em;
@@ -23,7 +23,7 @@
     width: 90%;
     font-family: "poppins-m";
     color: rgb(184, 184, 184);
-    font-weight: 550;
+    font-weight: 600;
     line-height: 1.25em;
     font-size: 4em;
 }

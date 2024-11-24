@@ -1,0 +1,23 @@
+
+
+.consultationHistory{
+    background-color: #fff;
+    width: 50%;
+    padding: 1em;
+    border-radius: 1em;
+    max-height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultationHistory h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 125, 252, 1);
+}
+
+.consultationHistory h5 span{
+    color: rgba(255, 0, 0, 1);
+}
+
