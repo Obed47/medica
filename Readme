@@ -1,0 +1,3 @@
+Pour lancer le serveur de FastAPI, taper la commande: uvicorn main:app --reload
+Pour lancer le serveur du chatbot, taper la commande: chainlit run Medica.py --watch --port 8001
+
