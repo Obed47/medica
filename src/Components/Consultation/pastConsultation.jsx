@@ -15,8 +15,8 @@ const PastConsultation = (props) => {
           <td>{props.illness}</td>
           <td>{props.remedy}</td>
           <td style={{ display: "flex", flexDirection: "row" }}>
-            {currentDate.getDate()} <p>:</p>
-            {currentDate.getMonth() + 1} <p>:</p> {currentDate.getFullYear()}
+            {currentDate.getDate()} <p>-</p>
+            {currentDate.getMonth() + 1} <p>-</p> {currentDate.getFullYear()}
           </td>
         </tr>
       </table>
