@@ -10,5 +10,11 @@ class Ordonnance(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+    class Meta:
+        db_table = 'ordonnances'
+        ordering = ('-id',)
+
+    """def __str__(self):
+        return self.first_name"""
 #Si votre projet nécessite un backend complexe (comme avec Django ou Django REST Framework),
 #P vous devrez peut-être combiner Vercel avec une autre solution pour héberger votre backend, comme Render, Heroku, ou un hébergement VPS.
