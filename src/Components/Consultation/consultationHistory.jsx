@@ -4,11 +4,18 @@ import PastConsultation from "./pastConsultation";
 
 const ConsultationHistory = () => {
   const [history, setHistory] = useState([
-    { illnessName: "headache", proposedRemedy: "paracetamol" },
-    { illnessName: "headache", proposedRemedy: "paracetamol" },
-    { illnessName: "headache", proposedRemedy: "paracetamol" },
-    { illnessName: "headache", proposedRemedy: "paracetamol" },
+    { illnessName: "Headache", proposedRemedy: "paracetamol", id: 1 },
+    { illnessName: "Body pain", proposedRemedy: "rest and sport", id: 2 },
+    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
+    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
+    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
+    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
   ]);
+  const Delete = (id) => {
+    setHistory(history.filter((item) => item.id != id));
+    console.log("item deleted");
+    console.log(history);
+  };
   return (
     <div className="consultationHistory">
       <h3>Consultation History</h3>
@@ -19,10 +26,14 @@ const ConsultationHistory = () => {
 
       {history.map((item) => {
         return (
-          <PastConsultation
-            illness={item.illnessName}
-            remedy={item.proposedRemedy}
-          />
+          <div>
+            <PastConsultation
+              Delete={() => Delete(item.illnessName)}
+              key={item.id}
+              illness={item.illnessName}
+              remedy={item.proposedRemedy}
+            />
+          </div>
         );
       })}
     </div>
