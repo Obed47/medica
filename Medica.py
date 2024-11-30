@@ -9,18 +9,50 @@ from langchain_groq import ChatGroq
 import chainlit as cl
 
 import json
+import re
+from collections import defaultdict
 
 os.environ["GROQ_API_KEY"] = "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"
 
-from collections import defaultdict
-
-# memoire globale pour les users, on peut utiliser une base de données pour qu'elle soit consistante 
+# Mémoire globale pour les utilisateurs et données de consultation
 user_memory = defaultdict(list)
+user_consultation = defaultdict(lambda: {
+    "symptomes": [],
+    "maladie": [],
+    "traitement": [],
+    "conseil": [],
+})
+
+# Extraction des données pertinentes
+def extract_symptoms(text):
+    return re.findall(r"\bsymptômes? : (.+?)[\.]", text)
+
+def extract_diseases(text):
+    return re.findall(r"\bmaladie[s]? : (.+?)[\.]", text)
+
+def extract_treatment(text):
+    return re.findall(r"\btraitement[s]? : (.+?)[\.]", text)
+
+def extract_conseil(text):
+    return re.findall(r"\bconseil[s]? : (.+?)[\.]", text)
+
+# Sauvegarder ou afficher les données de consultation
+def save_or_display_consultation(user_id):
+    consultation = user_consultation[user_id]
+    
+    # Affichage dans le terminal
+    print(f"Consultation pour l'utilisateur {user_id}:")
+    print(f"Symptômes : {', '.join(consultation['symptomes'])}")
+    print(f"Maladies trouvées : {', '.join(consultation['maladie'])}")
+    print(f"Traitements proposés : {', '.join(consultation['traitement'])}")
+    print(f"Conseils : {', '.join(consultation['conseil'])}")
+
+    # Exemple de sauvegarde dans un fichier JSON (remplacer par une base de données si nécessaire)
+    with open(f"consultation_{user_id}.json", "w") as f:
+        json.dump(consultation, f, indent=4)
 
 @cl.on_chat_start
 async def on_chat_start():
-
-    # On obtient l'id de l'utilisateur ou dumoins de sa session
     user_id = cl.user_session.get("id", "default_user")
     
     # Initialiser les données utilisateur
@@ -44,7 +76,7 @@ async def on_chat_start():
     await cl.Message(content=salutation).send()
 
     model = ChatGroq(
-        model="mixtral-8x7b-32768",
+        model="gemma2-9b-it",
         temperature=0,
         max_tokens=None,
         timeout=None,
@@ -57,8 +89,18 @@ async def on_chat_start():
                 "system",
                 f"""
                 Tu es Medica, un assistant médical virtuel.
-                ton rôle est de fournir des réponses précises en 2 ou 3 lignes, directement liées à la question posée et aux questions précédentes.
+                Ton rôle est de fournir des réponses précises en 2 ou 3 lignes, directement liées à la question posée et aux questions précédentes.
+                Pose 4 ou 5 questions structurées pour obtenir des détails sur l'état du patient.
                 Voici les données de base du patient : allergies {user_data['allergies']} et maladies héréditaires {user_data['maladies']}.
+                Ces données sont confidentielles et ne doivent jamais apparaître dans tes réponses.
+
+                Une fois la consultation terminée, tu finiras par un rapport sous la forme :
+
+                Consultation terminée. Résumé :
+                    Symptômes : Fièvre, maux de tête, frissons.
+                    Maladie : Grippe.
+                    Traitement : Paracétamol 500mg, hydratation, repos.
+                    Conseil : Surveiller les symptômes, consulter un médecin si nécessaire.
                 """,
             ),
             ("human", "{question}"),
@@ -88,7 +130,18 @@ async def on_message(message: cl.Message):
         config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()]),
     ):
         # Ajouter la réponse dans l'historique
-        user_memory[user_id].append({"role": "assistant", "content": chunk})
+        user_memory[user_id].append({"role": "Medica", "content": chunk})
+
         await msg.stream_token(chunk)
 
     await msg.send()
+
+    # Si la consultation est terminée
+    if "consultation terminée" in msg.content.lower():
+        # Extraire des données pertinentes
+        user_consultation[user_id]["symptomes"].extend(extract_symptoms(msg.content.lower()))
+        user_consultation[user_id]["maladie"].extend(extract_diseases(msg.content.lower()))
+        user_consultation[user_id]["traitement"].extend(extract_treatment(msg.content.lower()))
+        user_consultation[user_id]["conseil"].extend(extract_conseil(msg.content.lower()))
+
+        save_or_display_consultation(user_id)
