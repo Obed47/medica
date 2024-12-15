@@ -23,16 +23,6 @@ const PastConsultation = (props) => {
           </td>
         </tr>
       </table>
-      <button style={{ boxShadow: "2px 2px 5px black" }} onClick={props.Delete}>
-        <img
-          style={{
-            width: "20px",
-            height: "20px",
-          }}
-          src={deleteIcon}
-          alt="Delete Iconn"
-        />
-      </button>
     </div>
   );
 };

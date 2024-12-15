@@ -1,0 +1,2929 @@
+[
+  {
+    "type": "node",
+    "id": 419588091,
+    "lat": 3.8570057,
+    "lon": 11.5175834,
+    "tags": {
+      "amenity": "hospital",
+      "emergency": "yes",
+      "healthcare": "hospital",
+      "name": "Centre Médico Social français",
+      "short_name": "CMS"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1013434376,
+    "lat": 4.0765156,
+    "lon": 11.2097151,
+    "tags": {
+      "amenity": "hospital",
+      "beds": "6",
+      "consultation": "5/month",
+      "doctors": "1",
+      "laboratory": "0",
+      "medical_service:malaria": "no",
+      "medical_service:vct_hiv_counselling_test": "no",
+      "name": "Central Medical de Nkol Poblo",
+      "pharmacy": "0"
+    }
+  },
+  {
+    "type": "node",
+    "id": 1067289952,
+    "lat": 4.0270672,
+    "lon": 11.3827584,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "La Morque d'Okola"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2283555316,
+    "lat": 3.8342187,
+    "lon": 11.5061824,
+    "tags": {
+      "amenity": "hospital",
+      "name": "Hôpital d'Efoulan"
+    }
+  },
+  {
+    "type": "node",
+    "id": 2284209683,
+    "lat": 3.8698391,
+    "lon": 11.502893,
+    "tags": {
+      "addr:city": "Yaoundé II",
+      "addr:housenumber": "1",
+      "addr:street": "Rue 3.359",
+      "amenity": "hospital",
+      "cuisine": "french;cameroonian;cafe_noir",
+      "healthcare": "hospital",
+      "healthcare:speciality": "general",
+      "internet_access": "yes",
+      "internet_access:fee": "yes",
+      "name": "Camp Yeyap 2",
+      "operator": "hopital militaire",
+      "operator:type": "public",
+      "source": "Geocameroun"
+    }
+  },
+  {
+    "type": "node",
+    "id": 3678512661,
+    "lat": 3.8807548,
+    "lon": 11.4937287,
+    "tags": {
+      "addr:street": "Rue 2.373",
+      "amenity": "clinic",
+      "name": "Centre de santé de Madagascar"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4362565208,
+    "lat": 3.8597086,
+    "lon": 11.4935654,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "677639572/6707021255",
+      "healthcare": "clinic",
+      "name": "CABINET DES SOINS LES DELICES"
+    }
+  },
+  {
+    "type": "node",
+    "id": 4883735221,
+    "lat": 3.8121305,
+    "lon": 11.502291,
+    "tags": {
+      "addr:street": "BP. 35227 Yaoundé",
+      "amenity": "hospital",
+      "email": "fondationmariarosansisim@gmaol.com",
+      "healthcare": "hospital",
+      "name": "Fondation médico-chirurgicale Maria Rosa Nsisim",
+      "phone": "222319428"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5161969332,
+    "lat": 3.8211882,
+    "lon": 11.5218151,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre de Santé Intégré Moïse & Elisabeth",
+      "source": "mapillary"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5161979851,
+    "lat": 3.8178603,
+    "lon": 11.5238763,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre de Santé Intégré Sainte Marie",
+      "source": "mapillary"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5348083228,
+    "lat": 3.8788543,
+    "lon": 11.5477716,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Hope Clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5479521721,
+    "lat": 3.724886,
+    "lon": 11.6379597,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Complexe Medico Chirurgical",
+      "name:en": "Chirurgical Medical Complex",
+      "operator": "Dr. Zang Etienne",
+      "phone": "676946627"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5596176330,
+    "lat": 3.8458495,
+    "lon": 11.4866674,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique de l'espoir"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5695789322,
+    "lat": 3.8636288,
+    "lon": 11.4992709,
+    "tags": {
+      "addr:housenumber": "562",
+      "addr:postcode": "12340",
+      "addr:street": "Rue 3.387",
+      "amenity": "hospital",
+      "email": "gtlabotsinga@yahoo.fr",
+      "healthcare": "hospital",
+      "name": "GT labo",
+      "name:fr": "GT labo Melen",
+      "phone": "242202792",
+      "website": "http://www.gtlabo.net"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5776915796,
+    "lat": 3.8628941,
+    "lon": 11.5041685,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "LM St Mary medical",
+      "note:nature": "privé",
+      "source": "survey:PFE(IT3) ENSTP Yaounde 2010"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5776915806,
+    "lat": 3.8650615,
+    "lon": 11.5038832,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Pavillon Ngantaha",
+      "note:nature": "privé",
+      "source": "survey:PFE(IT3) ENSTP Yaounde 2010"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5777072967,
+    "lat": 3.8702745,
+    "lon": 11.508231,
+    "tags": {
+      "addr:postcode": "BP 8587 yde",
+      "amenity": "clinic",
+      "contact:email": "cvi_messa@yahoo.fr",
+      "contact:phone": "672151406",
+      "healthcare": "clinic",
+      "name": "Centre de Vaccinations Internationales de Yaounde",
+      "source": "sobzeros"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5824969054,
+    "lat": 3.8941892,
+    "lon": 11.5036588,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Polyclinique du palais"
+    }
+  },
+  {
+    "type": "node",
+    "id": 5864861885,
+    "lat": 3.8172274,
+    "lon": 11.4748655,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Hospitalier Pédiatrique et Gynécologique Nina"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6308090915,
+    "lat": 3.8689298,
+    "lon": 11.5127036,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "Croix Rouge Camerounaise",
+      "source": "sobzeros"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6314455450,
+    "lat": 3.870237,
+    "lon": 11.5205102,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Médical de l'Hippodrome"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6315935395,
+    "lat": 3.8801278,
+    "lon": 11.5264083,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique Sainte-Maithe",
+      "source": "sobzeros"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337677572,
+    "lat": 3.9006048,
+    "lon": 11.5090048,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique vétérinaire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337722735,
+    "lat": 3.8965376,
+    "lon": 11.5122342,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Alhysca"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337757203,
+    "lat": 3.8919171,
+    "lon": 11.5061738,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Dispensaire de l'ONU"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337770013,
+    "lat": 3.8889173,
+    "lon": 11.5170448,
+    "tags": {
+      "amenity": "clinic",
+      "denomination": "roman_catholic",
+      "healthcare": "clinic",
+      "name": "Centre de santé catholique de",
+      "religion": "christian"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337778043,
+    "lat": 3.8820861,
+    "lon": 11.5160265,
+    "tags": {
+      "addr:postcode": "Bp 10004 Yaoundé",
+      "amenity": "clinic",
+      "check_date": "2023-12-09",
+      "contact:phone": "222217995",
+      "healthcare": "clinic",
+      "name": "Émeraude Optique"
+    }
+  },
+  {
+    "type": "node",
+    "id": 6337778044,
+    "lat": 3.8826674,
+    "lon": 11.5159221,
+    "tags": {
+      "amenity": "clinic",
+      "check_date": "2023-12-09",
+      "healthcare": "clinic",
+      "healthcare:speciality": "Neurologie Pédiatrie",
+      "name": "Cabinet Médical du Centre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148809644,
+    "lat": 3.8495921,
+    "lon": 11.4579805,
+    "tags": {
+      "NOM": "Centre De Santé Divin",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148818875,
+    "lat": 3.8719504,
+    "lon": 11.4684364,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé La Vie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148832374,
+    "lat": 3.8508298,
+    "lon": 11.4420019,
+    "tags": {
+      "amenity": "clinic",
+      "phone": "(+237) 50036592"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148836611,
+    "lat": 3.8770657,
+    "lon": 11.4803508,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé Saint Martin D' Etetak Abobo"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148838024,
+    "lat": 3.8559934,
+    "lon": 11.4513803,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Trinité",
+      "phone": "(+237) 699142465"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148838202,
+    "lat": 3.8589091,
+    "lon": 11.4594604,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé Marie Anderson",
+      "phone": "(+237) 694884746"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148840966,
+    "lat": 3.8595032,
+    "lon": 11.4510396,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148841169,
+    "lat": 3.8719103,
+    "lon": 11.4805996,
+    "tags": {
+      "NOM": "Prodilya",
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148852628,
+    "lat": 3.8683303,
+    "lon": 11.4581475,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé Irad"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148852719,
+    "lat": 3.8715945,
+    "lon": 11.4642984,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé Saint Joseph"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148861371,
+    "lat": 3.8814585,
+    "lon": 11.4732101,
+    "tags": {
+      "NOM": "Centre De Santé Confort Plus",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148866251,
+    "lat": 3.8830869,
+    "lon": 11.4814927,
+    "tags": {
+      "NOM": "Miroir Reférence",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148870204,
+    "lat": 3.8746579,
+    "lon": 11.4743453,
+    "tags": {
+      "NOM": "Fosa Esperance",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148886078,
+    "lat": 3.8789557,
+    "lon": 11.4738059,
+    "tags": {
+      "NOM": "Miroir Reférence",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148892705,
+    "lat": 3.8808156,
+    "lon": 11.4702791,
+    "tags": {
+      "NOM": "Jésus Le Bon Pasteur",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148901136,
+    "lat": 3.8746867,
+    "lon": 11.4657683,
+    "tags": {
+      "NOM": "Centre De Santé La Proximité",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7148919595,
+    "lat": 3.8746626,
+    "lon": 11.4645874,
+    "tags": {
+      "NOM": "Centre De Santé Nadejka",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150514880,
+    "lat": 3.8744934,
+    "lon": 11.4258631,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150524684,
+    "lat": 3.8745462,
+    "lon": 11.4520596,
+    "tags": {
+      "NOM": "Gloire Divine",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150526652,
+    "lat": 3.8788507,
+    "lon": 11.4616534,
+    "tags": {
+      "NOM": "La Gloire Divine",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150527016,
+    "lat": 3.875256,
+    "lon": 11.4313623,
+    "tags": {
+      "NOM": "Save Life",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150530012,
+    "lat": 3.8745241,
+    "lon": 11.4313227,
+    "tags": {
+      "NOM": "Centre De Social Pilote Odzon",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150531076,
+    "lat": 3.8840516,
+    "lon": 11.4677511,
+    "tags": {
+      "NOM": "La Main Secourable District De De Nkolbisson",
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150535118,
+    "lat": 3.8747466,
+    "lon": 11.4330852,
+    "tags": {
+      "NOM": "Centre De Santé La Vie",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150535166,
+    "lat": 3.876382,
+    "lon": 11.4581763,
+    "tags": {
+      "NOM": "Clinique Shalom",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150537195,
+    "lat": 3.8854057,
+    "lon": 11.4639544,
+    "tags": {
+      "NOM": "Innovat",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150538129,
+    "lat": 3.8857917,
+    "lon": 11.4545573,
+    "tags": {
+      "NOM": "Centre De Santé Le Progrès",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150538138,
+    "lat": 3.8839211,
+    "lon": 11.4514621,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Florence Nightingale",
+      "phone": "(+237) 679317907 / 69917995."
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150547404,
+    "lat": 3.8728784,
+    "lon": 11.4558186,
+    "tags": {
+      "NOM": "Laboratoire Ciab Exact",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150547441,
+    "lat": 3.8837251,
+    "lon": 11.4433028,
+    "tags": {
+      "NOM": "Propharma",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150561640,
+    "lat": 3.87486,
+    "lon": 11.427353,
+    "tags": {
+      "NOM": "Sainte Anthonia",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150561766,
+    "lat": 3.8754922,
+    "lon": 11.4151745,
+    "tags": {
+      "NOM": "Centre De Santé Marie-paul",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150565131,
+    "lat": 3.8827346,
+    "lon": 11.4632604,
+    "tags": {
+      "NOM": "Le Bien-être",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150566394,
+    "lat": 3.8844416,
+    "lon": 11.4645995,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150567977,
+    "lat": 3.886416,
+    "lon": 11.4689446,
+    "tags": {
+      "NOM": "La Patience",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150568339,
+    "lat": 3.8843607,
+    "lon": 11.4690594,
+    "tags": {
+      "NOM": "Centrr De Santé Merveilles Divines",
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150568950,
+    "lat": 3.8864714,
+    "lon": 11.4688783,
+    "tags": {
+      "NOM": "Mont Bonoko",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150570792,
+    "lat": 3.8860105,
+    "lon": 11.4623022,
+    "tags": {
+      "NOM": "La Charité",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150572093,
+    "lat": 3.885488,
+    "lon": 11.4654907,
+    "tags": {
+      "NOM": "La Patience",
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150572143,
+    "lat": 3.8808594,
+    "lon": 11.4609266,
+    "tags": {
+      "NOM": "La Gloire Divine",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150573650,
+    "lat": 3.8792193,
+    "lon": 11.4583929,
+    "tags": {
+      "NOM": "Clinique Shalom",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150573780,
+    "lat": 3.8764215,
+    "lon": 11.4458247,
+    "tags": {
+      "amenity": "clinic",
+      "name": "District De Santé De Nkolbisson"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150574373,
+    "lat": 3.8853715,
+    "lon": 11.4596274,
+    "tags": {
+      "NOM": "Propharmacie Et Soins Au Vert",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150575397,
+    "lat": 3.882752,
+    "lon": 11.4550106,
+    "tags": {
+      "NOM": "Propharmacie Et Soins Au Vert",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150575524,
+    "lat": 3.877984,
+    "lon": 11.4614791,
+    "tags": {
+      "NOM": "Centre De Sante La Confiance",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150578677,
+    "lat": 3.8788858,
+    "lon": 11.4359163,
+    "tags": {
+      "NOM": "La Référence",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150582506,
+    "lat": 3.8861369,
+    "lon": 11.45974,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150583060,
+    "lat": 3.8815575,
+    "lon": 11.4515834,
+    "tags": {
+      "NOM": "Cabinet De Soins S.p.m",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150585616,
+    "lat": 3.8747449,
+    "lon": 11.4330903,
+    "tags": {
+      "NOM": "Centre De Santé La Vie",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150586600,
+    "lat": 3.8857924,
+    "lon": 11.4545546,
+    "tags": {
+      "NOM": "Centre De Santé Le Progrès",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150590215,
+    "lat": 3.8788898,
+    "lon": 11.4359223,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Référence"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150592029,
+    "lat": 3.879695,
+    "lon": 11.4199702,
+    "tags": {
+      "NOM": "Centre De Santé Marie-paul",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150592034,
+    "lat": 3.8839238,
+    "lon": 11.4514527,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Florence Nightingale",
+      "phone": "(+237) 679317907 / 69917995."
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150593423,
+    "lat": 3.8935214,
+    "lon": 11.4575735,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150594299,
+    "lat": 3.8989704,
+    "lon": 11.4529782,
+    "tags": {
+      "NOM": "Sainte Marthe",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150594676,
+    "lat": 3.8975334,
+    "lon": 11.4509216,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Relève",
+      "phone": "(+237) 674147619 / 693581358"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150594908,
+    "lat": 3.8969434,
+    "lon": 11.4533088,
+    "tags": {
+      "NOM": "De L'effort",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150595171,
+    "lat": 3.890737,
+    "lon": 11.4566287,
+    "tags": {
+      "NOM": "Centre De Santé Communauté Samaritain",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150595172,
+    "lat": 3.8919124,
+    "lon": 11.4500733,
+    "tags": {
+      "NOM": "Ceraso Azem Medical",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7150596987,
+    "lat": 3.889676,
+    "lon": 11.460763,
+    "tags": {
+      "NOM": "Centre De Santé La Miséricorde",
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153477358,
+    "lat": 3.8789383,
+    "lon": 11.4722706,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Soins Spécialisés Ste Germaine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153477359,
+    "lat": 3.8780328,
+    "lon": 11.4703076,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Providence"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153477360,
+    "lat": 3.8739334,
+    "lon": 11.4649884,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Naturopathe"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153482081,
+    "lat": 3.8955886,
+    "lon": 11.4559266,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Cabinet De Soin Au Coeur Uni"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153501911,
+    "lat": 3.8769834,
+    "lon": 11.4745451,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Cabinets De Soins Teffeu"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7153637348,
+    "lat": 3.8442102,
+    "lon": 11.4531028,
+    "tags": {
+      "amenity": "hospital",
+      "contact:phone": "(+237) 699025915",
+      "name": "Le Samaritain Plus"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163229397,
+    "lat": 3.8619197,
+    "lon": 11.5297034,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Médical Ashyvic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163242975,
+    "lat": 3.8637221,
+    "lon": 11.5272251,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Hôpital de District de Mvog Ada"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163243947,
+    "lat": 3.8699567,
+    "lon": 11.5300085,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Maeva Care Clinique"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163250219,
+    "lat": 3.8663935,
+    "lon": 11.5326646,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 699338298",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Main Douce-nhuka"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163252906,
+    "lat": 3.8693389,
+    "lon": 11.5382369,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163267836,
+    "lat": 3.869198,
+    "lon": 11.5317453,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique Hope House"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163299118,
+    "lat": 3.8696523,
+    "lon": 11.5378077,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé St Gok-pierre"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163309319,
+    "lat": 3.8710118,
+    "lon": 11.5439741,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé St Joseph"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163315005,
+    "lat": 3.8737788,
+    "lon": 11.5475053,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163320099,
+    "lat": 3.8725037,
+    "lon": 11.5476823,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163338070,
+    "lat": 3.8751938,
+    "lon": 11.5318559,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Medical Sainte Bernadette"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163338977,
+    "lat": 3.8761726,
+    "lon": 11.5386553,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Sainte Thérèse"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163339590,
+    "lat": 3.8757939,
+    "lon": 11.5433948,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Maison De La Santé St Paul"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163354181,
+    "lat": 3.8766001,
+    "lon": 11.532448,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163357955,
+    "lat": 3.8760301,
+    "lon": 11.5411478,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Kutenda Médical"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163372057,
+    "lat": 3.8792635,
+    "lon": 11.5560293,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Virginia Anderson"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163373365,
+    "lat": 3.8780485,
+    "lon": 11.5433519,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Humanitaire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163382839,
+    "lat": 3.8805741,
+    "lon": 11.5388719,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet Dentaire The Queen"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163386473,
+    "lat": 3.8893227,
+    "lon": 11.53314,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "St Thomas"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163391027,
+    "lat": 3.8798816,
+    "lon": 11.5443527,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 69223175",
+      "healthcare": "clinic",
+      "name": "Gasi"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163393385,
+    "lat": 3.8831143,
+    "lon": 11.5330937,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Gic Santé Moko Benis"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163393978,
+    "lat": 3.8782345,
+    "lon": 11.5601867,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Le Bien-être De Nkolmesseng"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163395313,
+    "lat": 3.8815749,
+    "lon": 11.5572692,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Médico Sanitaire De L'espoir"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163399807,
+    "lat": 3.8914776,
+    "lon": 11.567194,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Citée Des Anges"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163406522,
+    "lat": 3.87999,
+    "lon": 11.5616026,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Main Douce Plus"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163406954,
+    "lat": 3.8802372,
+    "lon": 11.5565852,
+    "tags": {
+      "amenity": "clinic",
+      "name": "L'espoir Santé"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163407162,
+    "lat": 3.8799472,
+    "lon": 11.5571572,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Gic Santé"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163407358,
+    "lat": 3.8843195,
+    "lon": 11.5386323,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163412436,
+    "lat": 3.8803881,
+    "lon": 11.5554647,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Sante La Gloire De Dieu"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163416424,
+    "lat": 3.8803282,
+    "lon": 11.5503507,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Sainte Romaine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163416455,
+    "lat": 3.8821195,
+    "lon": 11.5570707,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Hoch"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163418248,
+    "lat": 3.8875472,
+    "lon": 11.5655565,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163421043,
+    "lat": 3.8859489,
+    "lon": 11.5335014,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163421656,
+    "lat": 3.8832561,
+    "lon": 11.5639479,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163428860,
+    "lat": 3.8853622,
+    "lon": 11.5355433,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Intégré Saint Maurice"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163431628,
+    "lat": 3.8847149,
+    "lon": 11.5610984,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Paix Des Anges"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163432402,
+    "lat": 3.8846109,
+    "lon": 11.5491327,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Mal Barr"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7163433218,
+    "lat": 3.8849427,
+    "lon": 11.5499038,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165640044,
+    "lat": 3.8732088,
+    "lon": 11.5416349,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique Du 6ème Bonheur"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165640045,
+    "lat": 3.8730818,
+    "lon": 11.5432261,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "En Elyon"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165664871,
+    "lat": 3.8722548,
+    "lon": 11.5307381,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique Médicale Enfants Malades"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165682017,
+    "lat": 3.8731241,
+    "lon": 11.5359462,
+    "tags": {
+      "addr:postcode": "Bp. 4676 yaoundé",
+      "amenity": "clinic",
+      "contact:phone": "(+237) 2012337",
+      "healthcare": "clinic",
+      "name": "Centre Médico Chirurgical De L'espoir"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165682018,
+    "lat": 3.8723065,
+    "lon": 11.5363297,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Medicy"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165682019,
+    "lat": 3.8719565,
+    "lon": 11.5378514,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 655039953",
+      "healthcare": "clinic",
+      "name": "La Grâce De Dieu"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165700314,
+    "lat": 3.877622,
+    "lon": 11.5462344,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 242131391",
+      "healthcare": "clinic",
+      "name": "Centre Médico Chirurgical D'essos"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165700315,
+    "lat": 3.8779191,
+    "lon": 11.5447823,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Frot"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165700316,
+    "lat": 3.8777672,
+    "lon": 11.5460952,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet Dentaire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165700317,
+    "lat": 3.8785092,
+    "lon": 11.547554,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique De L'espoir"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165800678,
+    "lat": 3.8911056,
+    "lon": 11.5648873,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fondation Médicale De La Paix"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165819472,
+    "lat": 3.8907919,
+    "lon": 11.5398442,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165822166,
+    "lat": 3.8878215,
+    "lon": 11.5582381,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 695375331",
+      "healthcare": "clinic",
+      "name": "Centre De Sante La Reference"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165825149,
+    "lat": 3.8909832,
+    "lon": 11.5632445,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Espoir Et Vie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165838224,
+    "lat": 3.8879058,
+    "lon": 11.5398341,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique Dutrelle"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165839652,
+    "lat": 3.897514,
+    "lon": 11.5404356,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Apsad"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165842012,
+    "lat": 3.8918475,
+    "lon": 11.552871,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fondation Medical Bio Santé"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165843261,
+    "lat": 3.8929655,
+    "lon": 11.5598877,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Le Premier Secours."
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165843697,
+    "lat": 3.8912876,
+    "lon": 11.5580883,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 675076277",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Santé Pour Tous"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165844905,
+    "lat": 3.8902613,
+    "lon": 11.5587719,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Espoir Et Vie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165846995,
+    "lat": 3.8915906,
+    "lon": 11.5584621,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Sante La Paix"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165847712,
+    "lat": 3.8922476,
+    "lon": 11.5401808,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Action Santé Développement"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165850136,
+    "lat": 3.887788,
+    "lon": 11.5491079,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fondation Medical Saint Raphaël"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165854544,
+    "lat": 3.898757,
+    "lon": 11.5679544,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 699604922",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Sainte Monique"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165854606,
+    "lat": 3.8926229,
+    "lon": 11.5478251,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Le Toubib"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165854971,
+    "lat": 3.8944781,
+    "lon": 11.5411109,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet De Soins Jehovat Jiré"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165855640,
+    "lat": 3.8969761,
+    "lon": 11.5392682,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Communautaire De Ngousso"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165857943,
+    "lat": 3.8985898,
+    "lon": 11.5617069,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 674330617",
+      "healthcare": "clinic",
+      "name": "Centre De Sante Providence"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165857944,
+    "lat": 3.9029215,
+    "lon": 11.5650898,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fondation Médical Anchel"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165858950,
+    "lat": 3.8921466,
+    "lon": 11.5446554,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Le Magnificat"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165859579,
+    "lat": 3.9006379,
+    "lon": 11.5568383,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Sainte Glanie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165860052,
+    "lat": 3.8932926,
+    "lon": 11.542,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Référence"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165860155,
+    "lat": 3.9014042,
+    "lon": 11.5621682,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 658682527",
+      "healthcare": "clinic",
+      "name": "Centre Médical Sainte Victoire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165861106,
+    "lat": 3.8982526,
+    "lon": 11.5667716,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fondation Sigba"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165861248,
+    "lat": 3.8995869,
+    "lon": 11.5664474,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Apsad"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165861433,
+    "lat": 3.8970464,
+    "lon": 11.5690803,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165865757,
+    "lat": 3.9016163,
+    "lon": 11.5618993,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé De Sainte Pancrace"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165865997,
+    "lat": 3.8945791,
+    "lon": 11.5578606,
+    "tags": {
+      "amenity": "clinic",
+      "contact:email": "sourcedecore@gmail.com",
+      "contact:phone": "(+237) 673958460",
+      "healthcare": "clinic",
+      "name": "Centre De Soins Hospitalier Source De Core"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165867241,
+    "lat": 3.896168,
+    "lon": 11.5680295,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165868795,
+    "lat": 3.8984847,
+    "lon": 11.567078,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 678620411",
+      "healthcare": "clinic",
+      "name": "Les Merveilles De Dieu"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165873083,
+    "lat": 3.9030714,
+    "lon": 11.5641128,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165883561,
+    "lat": 3.9070974,
+    "lon": 11.5649825,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Le Divin"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165887201,
+    "lat": 3.90172,
+    "lon": 11.5607393,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 678322332",
+      "healthcare": "clinic",
+      "name": "Centre Médical Ange David"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165888460,
+    "lat": 3.9013701,
+    "lon": 11.5638245,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Se Sante Grace Divine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165893920,
+    "lat": 3.9063986,
+    "lon": 11.5632441,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Les Premiers Secours De Ngoulmekong - Fosapps"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165895334,
+    "lat": 3.900665,
+    "lon": 11.5554138,
+    "tags": {
+      "amenity": "clinic",
+      "contact:email": "josyloven85@gmail.com",
+      "healthcare": "clinic",
+      "name": "Centre De Santé Josepha"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165897245,
+    "lat": 3.9080996,
+    "lon": 11.5684305,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet De Soins De Santé - A C S A S"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165964070,
+    "lat": 3.8997478,
+    "lon": 11.5443298,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Patience"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165964071,
+    "lat": 3.9004507,
+    "lon": 11.5472562,
+    "tags": {
+      "addr:postcode": "BP5702YDE",
+      "amenity": "clinic",
+      "contact:email": "cinermabrindsilf@gmail.com",
+      "healthcare": "clinic",
+      "name": "Josephina Médical Space Al . Technologie (cabinet Médicalisé De Beauté Et De Bien-etre)"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165964072,
+    "lat": 3.8999357,
+    "lon": 11.54746,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Radiographie -échographie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165964073,
+    "lat": 3.9009373,
+    "lon": 11.5471041,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Sgi Sarl (vente De Produits De Santé Traditionnel)"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165964350,
+    "lat": 3.8739896,
+    "lon": 11.5463633,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Médical Espoir Solidarité"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165966141,
+    "lat": 3.8869317,
+    "lon": 11.546997,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Fohow International Vip( l Univers Bio De Votre Santé )"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165969036,
+    "lat": 3.8880449,
+    "lon": 11.5523413,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Polyclinic Sende"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165983529,
+    "lat": 3.8765846,
+    "lon": 11.5489776,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 222225052",
+      "healthcare": "clinic",
+      "name": "Centre Médical Au Bois D'amour"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165983530,
+    "lat": 3.8760991,
+    "lon": 11.5491966,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Avicenne"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165985534,
+    "lat": 3.8818114,
+    "lon": 11.5469132,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Solidarité"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165996429,
+    "lat": 3.8998703,
+    "lon": 11.5548139,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Clinique Vétérinaire De Ngousso"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165996430,
+    "lat": 3.8985988,
+    "lon": 11.5507065,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Longrich Health & Wealth Home"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165996431,
+    "lat": 3.8993284,
+    "lon": 11.5517564,
+    "tags": {
+      "amenity": "clinic",
+      "contact:email": "centremedicalstluc@yahoo.fr",
+      "healthcare": "clinic",
+      "name": "Centre Médical Saint Luc De Ngousso"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7165998327,
+    "lat": 3.8895542,
+    "lon": 11.5422226,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Bb Diagnostics"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166000695,
+    "lat": 3.8806093,
+    "lon": 11.5399057,
+    "tags": {
+      "amenity": "clinic",
+      "contact:website": "www.exact.cm",
+      "healthcare": "clinic",
+      "name": "Exact( Laboratoire, Consultation, Radiographie, Échographie )"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166000696,
+    "lat": 3.8800549,
+    "lon": 11.5366505,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Recherche Sur Les Filarioses Et Autres Maladies Tropicales"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166000697,
+    "lat": 3.8800211,
+    "lon": 11.5390568,
+    "tags": {
+      "addr:postcode": "BP25076YDE",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cap Santé. Centre Medico-chirurgical"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166000698,
+    "lat": 3.8795672,
+    "lon": 11.5369151,
+    "tags": {
+      "addr:postcode": "BP3394YDE",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Clinique: St Joseph Cancer Center"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166000699,
+    "lat": 3.8788984,
+    "lon": 11.5396953,
+    "tags": {
+      "addr:postcode": "BP11400YDE",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Medical Services"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166043515,
+    "lat": 3.8869193,
+    "lon": 11.5370917,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cemrio"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166043516,
+    "lat": 3.8884962,
+    "lon": 11.5380343,
+    "tags": {
+      "addr:postcode": "Rue 1.502 omnisport-mfandena",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Naroge Medical & Services"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166043517,
+    "lat": 3.8856983,
+    "lon": 11.5367912,
+    "tags": {
+      "amenity": "clinic",
+      "contact:website": "www.cabinet-lamat.com",
+      "healthcare": "clinic",
+      "name": "Centre Médical Lamat Centre Cadio Vasculaire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166045007,
+    "lat": 3.8831333,
+    "lon": 11.5386773,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet Médical Dilma"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166050930,
+    "lat": 3.9086637,
+    "lon": 11.5405905,
+    "tags": {
+      "addr:postcode": "BP11877YDE",
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Thérapie Du Langage Orthophonie-logopedie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166050931,
+    "lat": 3.9084924,
+    "lon": 11.5379948,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Esperance Cabinet De Lunetterie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166052663,
+    "lat": 3.8889882,
+    "lon": 11.5347339,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Casesco"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166058122,
+    "lat": 3.8981843,
+    "lon": 11.5387136,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Cabinet De Dépistage"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166075138,
+    "lat": 3.8938974,
+    "lon": 11.5351074,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166605683,
+    "lat": 3.9141651,
+    "lon": 11.5643611,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Maloine Sarl"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166605684,
+    "lat": 3.9129131,
+    "lon": 11.5594925,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Espoir Et Vie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166621371,
+    "lat": 3.9072911,
+    "lon": 11.562709,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Laboratoire Bourgeois"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166621918,
+    "lat": 3.9013021,
+    "lon": 11.5623374,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre Medical Sainte Victoire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166624253,
+    "lat": 3.9305908,
+    "lon": 11.5548994,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Cabinet Médico Sanitaire - La Voix Du Seigneur M'appelle"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166633934,
+    "lat": 3.9188495,
+    "lon": 11.5526149,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166700178,
+    "lat": 3.8987818,
+    "lon": 11.5487384,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Grâce Divine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166736348,
+    "lat": 3.8987948,
+    "lon": 11.5441559,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Bienfaisance"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166739995,
+    "lat": 3.9025583,
+    "lon": 11.5468434,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Miséricorde"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166740373,
+    "lat": 3.907082,
+    "lon": 11.5372042,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Miséricorde"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166741483,
+    "lat": 3.8981987,
+    "lon": 11.5401942,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Djamtabo"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166742324,
+    "lat": 3.8993397,
+    "lon": 11.5458594,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Le Bien Être De Ngousso"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166747876,
+    "lat": 3.8987353,
+    "lon": 11.5364271,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Alliance Divine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166749513,
+    "lat": 3.9076172,
+    "lon": 11.5468924,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166751943,
+    "lat": 3.9089686,
+    "lon": 11.5483756,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre De Santé La Roche"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166756459,
+    "lat": 3.9112097,
+    "lon": 11.5502824,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Go For Humanity"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166767479,
+    "lat": 3.91015,
+    "lon": 11.5464391,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Gaieté"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166782793,
+    "lat": 3.9102932,
+    "lon": 11.5430474,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "La Fraternité"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166787429,
+    "lat": 3.9141546,
+    "lon": 11.5460441,
+    "tags": {
+      "amenity": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166788590,
+    "lat": 3.9163823,
+    "lon": 11.5412544,
+    "tags": {
+      "amenity": "clinic",
+      "name": "En Saïd"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166790480,
+    "lat": 3.9163179,
+    "lon": 11.5422984,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Zogo Abena"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166793232,
+    "lat": 3.9305366,
+    "lon": 11.5422763,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Grâce Du Rédempteur"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166799775,
+    "lat": 3.9210953,
+    "lon": 11.5396799,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Cabinet De Soins Espoir,santé & Vie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166803744,
+    "lat": 3.9247279,
+    "lon": 11.5438863,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Shalom"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166804631,
+    "lat": 3.9176908,
+    "lon": 11.5389135,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Holly Anna'health Center"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166805434,
+    "lat": 3.9216195,
+    "lon": 11.5432241,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Tamoud"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166808715,
+    "lat": 3.9200654,
+    "lon": 11.5418889,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Propharmacie"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166808979,
+    "lat": 3.9215892,
+    "lon": 11.54285,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Tamoude"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166810543,
+    "lat": 3.9196908,
+    "lon": 11.5419933,
+    "tags": {
+      "amenity": "clinic",
+      "name": "St Germaine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166812917,
+    "lat": 3.9303664,
+    "lon": 11.5425301,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centre De Santé Don De Guérison"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166814055,
+    "lat": 3.9206437,
+    "lon": 11.5407112,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Centee De Santé God's Will"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166815402,
+    "lat": 3.9288521,
+    "lon": 11.5566328,
+    "tags": {
+      "amenity": "clinic",
+      "name": "La Gloire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166815918,
+    "lat": 3.9216914,
+    "lon": 11.5423338,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Les Merveilles"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7166818126,
+    "lat": 3.9242094,
+    "lon": 11.5485634,
+    "tags": {
+      "amenity": "clinic",
+      "name": "Samaritain"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7171631844,
+    "lat": 3.8824412,
+    "lon": 11.5205968,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "abe"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7179451285,
+    "lat": 3.8401909,
+    "lon": 11.5951909,
+    "tags": {
+      "addr:street": "Rue 4.610",
+      "amenity": "clinic",
+      "name": "Fondation médicale Mine et Da Sylva"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7281741986,
+    "lat": 3.8435976,
+    "lon": 11.4786268,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Centre hospitalier Caroline"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7433218785,
+    "lat": 3.8111891,
+    "lon": 11.4540259,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "test 1"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7801588585,
+    "lat": 3.5161856,
+    "lon": 11.5144111,
+    "tags": {
+      "amenity": "hospital",
+      "name": "Hôpital Rosaire",
+      "name:fr": "Hôpital Rosaire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 7801589185,
+    "lat": 3.5198787,
+    "lon": 11.5042933,
+    "tags": {
+      "addr:postcode": "237",
+      "amenity": "hospital",
+      "building": "yes",
+      "healthcare": "hospital",
+      "name": "BAM",
+      "name:en": "Mbalmayo district hospital",
+      "name:fr": "Hôpital de district de mbalmayo"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8108601617,
+    "lat": 3.8699215,
+    "lon": 11.5082292,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "Hygiène Mobile"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8235688402,
+    "lat": 3.9288525,
+    "lon": 11.5566303,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "(+237) 6",
+      "name": "La Gloire"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8318722317,
+    "lat": 3.7913432,
+    "lon": 11.4459804,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "Hôpital St Thérèse de Nomayos"
+    }
+  },
+  {
+    "type": "node",
+    "id": 8460263826,
+    "lat": 3.8360396,
+    "lon": 11.4835363,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "Q7 Hôpital"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9111838417,
+    "lat": 3.9109219,
+    "lon": 11.5266299,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic",
+      "name": "Docteur EDU"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9144291623,
+    "lat": 3.8472095,
+    "lon": 11.5191774,
+    "tags": {
+      "amenity": "clinic",
+      "contact:phone": "690934069",
+      "healthcare": "clinic",
+      "name": "ombéssa"
+    }
+  },
+  {
+    "type": "node",
+    "id": 9780646428,
+    "lat": 3.9071074,
+    "lon": 11.4490943,
+    "tags": {
+      "amenity": "hospital",
+      "name": "Centre de santé CLAUDINE ECHERNIER"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10013409318,
+    "lat": 3.8767421,
+    "lon": 11.5687495,
+    "tags": {
+      "addr:street": "Rue 4.922",
+      "amenity": "hospital",
+      "email": "zrmclinic2022@gmail.com",
+      "name": "ZION REFERENCE MEDICAL CLINIC",
+      "phone": "670791036"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10013418817,
+    "lat": 3.8761056,
+    "lon": 11.5691491,
+    "tags": {
+      "amenity": "hospital",
+      "name": "REFERENCE CLINIC MIMBOMAN"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10231598995,
+    "lat": 3.801733,
+    "lon": 11.4633335,
+    "tags": {
+      "amenity": "clinic",
+      "healthcare": "clinic"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10231599001,
+    "lat": 3.8045083,
+    "lon": 11.4641342,
+    "tags": {
+      "amenity": "hospital"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10753137105,
+    "lat": 3.863764,
+    "lon": 11.5273853,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "name": "CMA de Mvog-Ada"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11411616571,
+    "lat": 3.8528744,
+    "lon": 11.5027928,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital",
+      "healthcare:speciality": "general",
+      "name": "Cabinet De Soins"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11422827648,
+    "lat": 3.8637788,
+    "lon": 11.4903464,
+    "tags": {
+      "amenity": "clinic",
+      "description": "Planning familial , vaccination, Gynécologie consultation de dent",
+      "name": "Full bright"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11459806721,
+    "lat": 3.862243,
+    "lon": 11.5741212,
+    "tags": {
+      "amenity": "clinic",
+      "check_date": "2023-12-27",
+      "healthcare": "clinic",
+      "name": "La Vertu",
+      "operator:type": "public",
+      "source": "survey"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11483020370,
+    "lat": 3.8522261,
+    "lon": 11.5009347,
+    "tags": {
+      "amenity": "clinic",
+      "check_date": "2024-01-03",
+      "healthcare": "clinic",
+      "healthcare:speciality": "general",
+      "name": "Cabinet De Soins Père Et Fils",
+      "operator:type": "private",
+      "phone": "+237 6 94 60 71 20",
+      "source": "survey"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11745911053,
+    "lat": 3.8627457,
+    "lon": 11.5036478,
+    "tags": {
+      "amenity": "clinic",
+      "check_date": "2024-03-19",
+      "healthcare": "clinic",
+      "name": "Centre Médical Miséricorde Divine"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11933010810,
+    "lat": 3.8161721,
+    "lon": 11.5317451,
+    "tags": {
+      "amenity": "hospital",
+      "name": "Hcnps"
+    }
+  },
+  {
+    "type": "node",
+    "id": 11975417209,
+    "lat": 3.9141556,
+    "lon": 11.5257199,
+    "tags": {
+      "amenity": "hospital",
+      "healthcare": "hospital"
+    }
+  },
+  {
+    "type": "node",
+    "id": 12237672014,
+    "lat": 3.946767,
+    "lon": 11.5844563,
+    "tags": {
+      "amenity": "clinic",
+      "check_date": "2024-10-09",
+      "healthcare": "clinic",
+      "internet_access": "no",
+      "name": "Centre de santé joie de vivre",
+      "payment:cards": "no",
+      "payment:cash": "yes",
+      "payment:credit_cards": "no",
+      "payment:debit_cards": "no",
+      "phone": "+237 6 70 82 42 09"
+    }
+  }
+]

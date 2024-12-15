@@ -11,11 +11,7 @@ const ConsultationHistory = () => {
     { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
     { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
   ]);
-  const Delete = (id) => {
-    setHistory(history.filter((item) => item.id != id));
-    console.log("item deleted");
-    console.log(history);
-  };
+
   return (
     <div className="consultationHistory">
       <h3>Consultation History</h3>
@@ -28,7 +24,6 @@ const ConsultationHistory = () => {
         return (
           <div>
             <PastConsultation
-              Delete={() => Delete(item.illnessName)}
               key={item.id}
               illness={item.illnessName}
               remedy={item.proposedRemedy}
