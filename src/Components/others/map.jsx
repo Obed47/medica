@@ -19,7 +19,7 @@ export default function Map() {
     iconAnchor: [16, 32],
     popupAnchor: [0, -32],
   });
-
+  //this is data used for path tracing. Note the differrent values required
   const pathCoordinates = [
     [3.848, 11.502], // Start point
     [3.8659, 11.5198], // Intermediate point
