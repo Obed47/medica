@@ -1,0 +1,17 @@
+[out:json][timeout:300];
+
+// Define the bounding box for Cameroon
+(
+  node["amenity"="hospital"](2.1,-16.0,13.0,24.0);
+  way["amenity"="hospital"](2.1,-16.0,13.0,24.0);
+  
+  node["amenity"="clinic"](2.1,-16.0,13.0,24.0);
+  way["amenity"="clinic"](2.1,-16.0,13.0,24.0);
+);
+
+// Output with tags, coordinates, and metadata
+out body;
+>;
+out skel qt;
+
+navigate to website https://overpass-turbo.eu/

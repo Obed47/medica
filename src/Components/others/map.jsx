@@ -40,6 +40,13 @@ export default function Map() {
           ;
           <Popup>
             <strong>{facility.tags.name}</strong>
+            <br />
+            <strong>
+              {facility.contact
+                ? facility.tags.contact.phone || contact.email
+                : " no contact"}
+            </strong>
+            <strong>{facility.tags.email}</strong>
           </Popup>
         </Marker>
       ))}
