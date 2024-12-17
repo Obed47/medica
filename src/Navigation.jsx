@@ -7,12 +7,14 @@ import ConsultationPage from "./Components/Consultation/consultationPage";
 import GetSymptoms from "./Components/others/GetSymptoms";
 import Map from "./Components/others/map";
 import DoctorFigure from "./Components/doctorFigure";
+import WelcomePage from "./welcomePage";
 export default function Navigation() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<DoctorFigure />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="illnesses" element={<GetSymptoms />} />
+        <Route path="welcome" element={<WelcomePage />} />
       </Routes>
     </div>
   );
