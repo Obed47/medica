@@ -1,21 +1,20 @@
 .pastConsultation {
   background-color: rgba(229, 228, 228, 1);
-  height: 13em;
+  height: max-content;
   width: 100%;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 3em 1em 1em 1em;
-  margin: 1em 0 1em 0;
+  padding: 0 1em 0 1em;
+  margin: 1em 0 0 0;
 }
 
 .pastConsultation table {
-  justify-self: center;
   width: 100%;
 }
 
-.pastConsultation table thead {
+.pastConsultation table thead{
   font-weight: 700;
   height: 3em;
   box-sizing: border-box;
@@ -25,21 +24,15 @@
 thead td:nth-child(2),
 .pastConsultation table tr td:nth-child(1),
 tr td:nth-child(2) {
-  max-width: 17em;
+  min-width: 10em;
+  max-width: 10em;
   word-wrap: break-word;
+  padding: 0.5em;
 }
+
 
 .pastConsultation table td:last-child {
-  text-align: end;
-}
-
-.pastConsultation button {
-  align-self: end;
-  font-size: small;
-  padding: 1em;
-  color: #fff;
-  border-radius: 10px;
-  background-color: rgba(255, 51, 51, 1);
-  font-weight: 800;
-  margin-top: 2em;
+  text-align:right;
+  width: 7em;
+  
 }

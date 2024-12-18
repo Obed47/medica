@@ -5,6 +5,7 @@ import GetSymptoms from "./Components/others/GetSymptoms";
 import WelcomePage from "./welcomePage";
 import Robot from "./Components/Consultation/robot";
 import ConsultationHistory from "../src/Components/Consultation/consultationHistory";
+import ConsultationPage from "./Components/Consultation/consultationPage";
 export default function Navigation() {
   return (
     <div>

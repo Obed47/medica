@@ -7,7 +7,7 @@ const PastConsultation = (props) => {
     <div className="pastConsultation">
       <table>
         <thead>
-          <td style={{ color: "#7878F3" }}>Ilness: </td>
+          <td style={{ color: "#7878F3" }}>Illness: </td>
           <td style={{ color: "#7878F3" }}>Proposed Medication</td>
           <td> </td>
         </thead>
