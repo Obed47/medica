@@ -3,17 +3,19 @@ import { Routes, Route } from "react-router-dom";
 import LoginPage from "./Components/LoginPage";
 import GetSymptoms from "./Components/others/GetSymptoms";
 import WelcomePage from "./welcomePage";
+import ConsultationPage from "./Components/Consultation/consultationPage";
 import Robot from "./Components/Consultation/robot";
-import ConsultationHistory from "../src/Components/Consultation/consultationHistory";
+import MapComp from "./Components/others/map";
 export default function Navigation() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<MapComp />} />
         <Route path="/illnesses" element={<GetSymptoms />} />
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/consultation" element={<Robot />} />
-        <Route path="/consultationHistory" element={<ConsultationHistory />} />
+        <Route path="/consultationHistory" element={<ConsultationPage />} />
+        <Route path="/map" element={<Map />} />
       </Routes>
     </div>
   );

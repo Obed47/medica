@@ -10,7 +10,7 @@ import "leaflet/dist/leaflet.css";
 import data from "./medicalCenters.json";
 import L, { PolyUtil } from "leaflet";
 import locationIcon from "../../assets/location.png";
-export default function Map() {
+export default function MapComp() {
   //map details and implementation here
   console.log(data);
   const customIcon = new L.Icon({

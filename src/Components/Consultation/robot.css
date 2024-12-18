@@ -1,27 +1,30 @@
-.mainRobot img{
-    height: 700px;
-    width: 700px;
-    padding: 10px;
+.mainRobot img {
+  height: 700px;
+  width: 700px;
+  padding: 10px;
 }
-.mainRobot p{
-    width: 600px;
-    padding: 10px;
+.mainRobot p {
+  width: 600px;
+  padding: 10px;
 }
-.Button{
-    background-color: #7878F3;
-    width: 90%;
-    height: 60px;
-    font-weight:600;
-    border-radius: 10px;
-    margin:40px;
-    box-shadow: 2px 2px 10px;
-    color: white;
-    padding: 20px;
-    
+.Button {
+  background-color: #7878f3;
+  width: 90%;
+  height: 60px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 40px;
+  box-shadow: 2px 2px 10px;
+  color: white;
+  padding: 20px;
 }
-.mainRobot{
-    background-color: #ffff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
+.mainRobot {
+  background-color: #ffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+.principalMain {
+  display: flex;
+  align-items: flex-start;
 }
