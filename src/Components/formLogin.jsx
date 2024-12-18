@@ -7,6 +7,8 @@ import eye from "../assets/eye.png";
 import hiddenEye from "../assets/hidden.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
+
 const FormLogin = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
@@ -101,7 +103,7 @@ const FormLogin = () => {
         <input
           onChange={(e) => setUsername(e.target.value)}
           type="text"
-          className="lastName"
+          className="userName"
           id="userName"
           placeholder="Choose a username"
         />
@@ -115,19 +117,6 @@ const FormLogin = () => {
           Submit
         </button>
       </form>
-
-      <div className="signUp">
-        <hr />
-        <span>or sign up with</span>
-        <hr />
-      </div>
-
-      <div className="options">
-        <NavLink>
-          <img src={google} alt="google" />
-          <span>Google</span>
-        </NavLink>
-      </div>
     </div>
   );
 };

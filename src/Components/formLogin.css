@@ -11,7 +11,7 @@
 
 .formLogin{
     width: max-content;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,8 +20,8 @@
 }
 
 .formLogin h1{
-    font-size: 2.25em;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: 600;
     align-self: center;
     font-family: "poppins-m";
     user-select: none;
@@ -29,8 +29,8 @@
 
 .formLogin h5{
     text-align: center;
-    font-weight:600 ;
-    margin-bottom: 2em;
+    font-weight:500 ;
+    margin-bottom: 1em;
     user-select: none;
 
 }
@@ -46,7 +46,7 @@
 /*------------------    FORM    -------------------------*/
 
 .formLogin form{
-    width: 28em;
+    width: 100%;
     box-sizing: border-box;
     display: grid;
     gap: 1em;
@@ -59,12 +59,12 @@
 
 .formLogin form input::placeholder{
     font-weight: lighter;
-    color: rgb(58, 57, 57);
-    
+    color: rgb(78, 78, 78);
 }
 
 .formLogin form input{
-    padding: 0.05em 0 0.05em 1em;
+    width: 100%;
+    padding: 0 0.5em 0 1em;
     height: 3.25em;
     background-color: rgba(146, 145, 145, 0.541);
     border: 0;
@@ -73,6 +73,10 @@
 }
 
 .formLogin form input[type='email']{
+    grid-column: 1/4;
+}
+
+.formLogin form .userName{
     grid-column: 1/4;
 }
 
@@ -87,7 +91,7 @@
     user-select: none;
 }
 
-.formLogin form input[type='passsword']{
+.formLogin form input[type='password']{
     background-color: rgba(146, 145, 145, 0.541);
 }
 
@@ -106,53 +110,16 @@
     width: 100%;
 }
 
-.formLogin form input[type='submit']{
-    grid-column: 1/4;
+.formLogin form button{
+    grid-column: 1/3;
     background-color: rgba(17, 0, 255, 0.849);
+    align-self: center;
     color: aliceblue;
     font-weight: bold;
     font-size: 1em;
     margin-top: 1em;
-}
-
-/*------------------    SIGN UP    -------------------------*/
-
-.formLogin .signUp{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2em;
-}
-
-.formLogin .signUp hr{
-    width:  25%;
-    color: rgb(212, 205, 205);
-}
-
-.formLogin .options{
-    width: 100%;
-    display: flex;
-    align-items: top;
-    justify-content: center;
-}
-
-.formLogin .options a img{
-    width: 2em;
-    height: 2em;
-}
-
-.formLogin .options a {
-    color: black;
-    font-weight: 500;
-    width: 40%;
-    border: 1px solid blue;
+    height: 3.25em;
+    border: 0;
     outline: 0;
-    border-radius: 0.5em;
-    background-color: transparent;
-    padding: 0.5em 1em 0.5em 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
+    border-radius: 0.25em;
 }
