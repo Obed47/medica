@@ -4,7 +4,7 @@ import timeLogo from "../../assets/Past.png";
 import "./options.css";
 export default function Options() {
   return (
-    <div  className="mainOptions">
+    <div className="mainOptions">
       <ul>
         <li>
           <img src={heart} alt="" />

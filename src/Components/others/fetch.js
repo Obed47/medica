@@ -1,14 +1,14 @@
+import axios from "axios";
+
 const fetchdata = () => {
-  fetch("http://192.168.43.156:8000/api/userprofiles")
+  axios
+    .get("http://192.168.1.101:8001/api/consultations")
     .then((res) => {
-      return res.json();
+      console.log(res.data);
     })
     //
     .catch((err) => {
       console.log(err);
-    })
-    .then((a) => {
-      console.log(a);
     });
 };
 fetchdata();
