@@ -16,7 +16,7 @@ export default function Navigation() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/illnesses" element={<GetSymptoms />} />
         <Route path="/welcome" element={<WelcomePage />} />
-        <Route path="/consultation" element={<Robot />} />
+        <Route path="/consultation" element={<ConsultationPage />} />
       </Routes>
     </div>
   );
