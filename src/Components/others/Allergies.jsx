@@ -3,13 +3,13 @@ import "./allergies.css";
 import add from "../../assets/add-btn.png";
 import Allergie from "./allergie";
 
-const Allergies = () => {
+const Allergies = ({ sendToParent }) => {
   const [allergies, setAllergies] = useState([]);
   const [currentAllergy, setCurrentAllergy] = useState("");
   const AddAllergy = (allergy) => {
-    console.log(allergies);
     if (currentAllergy.length != 0) {
       setAllergies([...allergies, allergy]);
+      sendToParent(allergies);
     } else {
       alert("Cant add empty allergy");
     }

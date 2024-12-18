@@ -3,7 +3,7 @@ import "./inherited.css";
 import add from "../../assets/add-btn.png";
 import Illness from "./illness";
 
-const Inherited = () => {
+const Inherited = ({ sendAbove }) => {
   const [inherited, setInherited] = useState([]);
   const [currentIllness, setCurrentIllness] = useState("");
 
@@ -16,6 +16,7 @@ const Inherited = () => {
   const addNewillness = (illnessToAdd) => {
     if (currentIllness.length != 0) {
       setInherited([...inherited, illnessToAdd]);
+      sendAbove(inherited);
     } else {
       alert("can't add empty heriditary illness");
     }

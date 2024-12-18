@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./consultationHistory.css";
 import PastConsultation from "./pastConsultation";
-
+import axios from "axios";
 const ConsultationHistory = () => {
-  const [history, setHistory] = useState([
-    { illnessName: "Headache", proposedRemedy: "paracetamol", id: 1 },
-    { illnessName: "Body pain", proposedRemedy: "rest and sport", id: 2 },
-    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
-    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
-    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
-    { illnessName: "Eye pain", proposedRemedy: "eye drops", id: 3 },
-  ]);
+  const [consultation, setConsultation] = useState([]);
 
+  const FetchData = () => {
+    axios
+      .get("api/consultations")
+      .then((res) => {
+        setConsultation(res.data);
+        console.log(consultation);
+      })
+
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  useEffect(() => {
+    FetchData();
+  }, []);
+  useEffect(() => {
+    console.log(consultation);
+  }, [consultation]);
   return (
     <div className="consultationHistory">
       <h3>Consultation History</h3>
@@ -20,13 +31,14 @@ const ConsultationHistory = () => {
         <span style={{ fontWeight: "bold" }}>read only</span>
       </h5>
 
-      {history.map((item) => {
+      {consultation.map((item) => {
         return (
           <div>
             <PastConsultation
               key={item.id}
-              illness={item.illnessName}
-              remedy={item.proposedRemedy}
+              illness={item.symptome}
+              remedy={item.traitement}
+              Date={item.date_consultation}
             />
           </div>
         );

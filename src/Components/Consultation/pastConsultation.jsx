@@ -18,8 +18,7 @@ const PastConsultation = (props) => {
             className="text-green-500 font-bold"
             style={{ display: "flex", flexDirection: "row" }}
           >
-            {currentDate.getDate()} <p>-</p>
-            {currentDate.getMonth() + 1} <p>-</p> {currentDate.getFullYear()}
+            {props.Date}
           </td>
         </tr>
       </table>
