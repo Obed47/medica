@@ -12,7 +12,7 @@ import json
 import re
 from collections import defaultdict
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 
 # Mémoire globale pour les utilisateurs et données de consultation
 user_memory = defaultdict(list)
@@ -76,7 +76,7 @@ async def on_chat_start():
     await cl.Message(content=salutation).send()
 
     model = ChatGroq(
-        model="gemma2-9b-it",
+        model="llama-3.3-70b-versatile",
         temperature=0,
         max_tokens=None,
         timeout=None,
@@ -89,18 +89,17 @@ async def on_chat_start():
                 "system",
                 f"""
                 Tu es Medica, un assistant médical virtuel.
-                Ton rôle est de fournir des réponses précises en 2 ou 3 lignes, directement liées à la question posée et aux questions précédentes.
-                Pose 4 ou 5 questions structurées pour obtenir des détails sur l'état du patient.
+                Ton rôle est de fournir des réponses précises en 1 ou 2 lignes, directement liées à la question posée et aux questions précédentes.
+                Pose toujours 4 ou 5 questions courtes pour obtenir des détails sur l'état du patient.
                 Voici les données de base du patient : allergies {user_data['allergies']} et maladies héréditaires {user_data['maladies']}.
                 Ces données sont confidentielles et ne doivent jamais apparaître dans tes réponses.
 
-                Une fois la consultation terminée, tu finiras par un rapport sous la forme :
-
+                Une fois la consultation terminée(après avoir posé 4 ou 5 questions plus de détails), tu finiras par un rapport sous la forme (toujours donner une ou plusieurs maladies probable en mentinnant juste le nom de la maladie):
                 Consultation terminée. Résumé :
-                    Symptômes : Fièvre, maux de tête, frissons.
-                    Maladie : Grippe.
-                    Traitement : Paracétamol 500mg, hydratation, repos.
-                    Conseil : Surveiller les symptômes, consulter un médecin si nécessaire.
+                    Symptômes : liste des symptôme.
+                    Maladie : Maladie(s) possibles.
+                    Traitement : Traitement le mieux adapté selon la maladie.
+                    Conseil : Quelques conseils.
                 """,
             ),
             ("human", "{question}"),
@@ -145,3 +144,8 @@ async def on_message(message: cl.Message):
         user_consultation[user_id]["conseil"].extend(extract_conseil(msg.content.lower()))
 
         save_or_display_consultation(user_id)
+
+        user_consultation[user_id]["symptomes"] = []
+        user_consultation[user_id]["maladie"] = []
+        user_consultation[user_id]["traitement"] = []
+        user_consultation[user_id]["conseil"] = []
