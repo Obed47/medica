@@ -87,23 +87,23 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'medica',
-        'USER': 'admin',
-        'PASSWORD': 'admin123',
+        'USER': 'carine',
+        'PASSWORD': 'carine123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
-    )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ],
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
+#     )
+# }
 
-SIMPLE_JWT = {"SIGNING_KEY": "5ahp8kseKOVB_x"}
+# SIMPLE_JWT = {"SIGNING_KEY": "5ahp8kseKOVB_x"}
 
 
 # Password validation
