@@ -10,6 +10,8 @@ from rest_framework import generics
 from .serializers import UserProfileSerializer
 from django.views.decorators.csrf import csrf_exempt
 import re
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.views import APIView
 
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework import viewsets
@@ -35,13 +37,13 @@ class UserProfileListCreate(generics.ListCreateAPIView):
             email=user_email,
             defaults={
                 'username': user_email.split('@')[0],  # Créer un nom d'utilisateur à partir de l'email
-                'password': '12345',  # Définir un mot de passe par défaut
+                'password': User.objects.make_random_password(),   # Définir un mot de passe par défaut
             }
         )
 
         # Associer le profil à l'utilisateur
         serializer.save(user=user)
-
+                                                        
     
 class UserProfileDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset= UserProfile.objects.all()
@@ -68,11 +70,6 @@ class UserView(viewsets.ModelViewSet):
     
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(**request.data)
-        # username = request.data.get("username")
-        # password = request.data.get("password")
-        # serializer= self.get_serializer()
-        # user = User.objects.create(username=username, password=password)
-        # serializer(**request.data)
         serializer.validated_data['password'] = User.set_password(request.data['password'])
         
         if serializer.is_valid():
@@ -85,18 +82,40 @@ class UserView(viewsets.ModelViewSet):
         token = RefreshToken(user)
         
         return Response({token},status=status.HTTP_201_CREATED)
+
+
+from rest_framework.exceptions import NotFound
+
+class UpdateUserProfileView(APIView):
+    permission_classes = [IsAuthenticated]
+   
+    def patch(self, request, *args, **kwargs):
+        user = request.user
         
+        # Vérifiez si le profil existe, sinon créez-le
+        user_profile, created = UserProfile.objects.get_or_create(user=user)
         
-        # if user is not None:
-        #     serializer.save(user=user)
-            
-        #     userAuth = authenticate(user)
-            
-        #     if userAuth:
-        #         request.data['user'] = user
-                
-            
-        # return super().create(request, *args, **kwargs)
+        # Récupération des données envoyées
+        maladie_hereditaire = request.data.get('maladie_hereditaire', "")
+        allergies = request.data.get('allergies', "")
+        
+        print(f"Maladie héréditaire: {maladie_hereditaire}")
+        print(f"Allergies: {allergies}")
+        
+        # Mise à jour des champs dans le profil
+        if maladie_hereditaire:
+            user_profile.maladie_hereditaire = maladie_hereditaire
+        if allergies:
+            user_profile.allergies = allergies
+        
+        # Sauvegarde des modifications
+        user_profile.save()
+        
+        if created:
+            return Response({"message": "Profil créé et mis à jour avec succès"}, status=status.HTTP_201_CREATED)
+        else:
+            return Response({"message": "Profil mis à jour avec succès"}, status=status.HTTP_200_OK)
+
 
 
 @csrf_exempt

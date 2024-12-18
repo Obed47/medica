@@ -1,5 +1,5 @@
 {
-    "first_name": "Lea",
+    "first_name": "Lea", 
     "last_name": "Dassi",
     "date_naissance": "2024-11-07",
     "maladie_hereditaire": "Autre",
@@ -9,4 +9,17 @@
     "password": "12345",
     "password1": "12345"
 }
+
+{
+    "allergies": "Pollen, gluten",
+    "maladie_hereditaire": "Diabète" 
+}
+
+{
+    "username": "carine",
+    "password": "12345"
+}
+
+
+
 

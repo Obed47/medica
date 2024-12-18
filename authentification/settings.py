@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 #pour enreigistrer une personne, on va dans row, on selectionne json en on envoi en POST avec 
 #http://127.0.0.1:8000/register
 
-#pour lire les donnee, on utilise http://127.0.0.1:8000/api/userprofiles en GET
+#pour lire les donnees, on utilise http://127.0.0.1:8000/api/userprofiles en GET
 
 #pour se connecter on utilise form-data en POST et avec http://127.0.0.1:8000/api/login 
 #on insere l'email et le mot de passe 
@@ -87,6 +87,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'rest_framework_simplejwt',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -97,6 +98,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'authentification.urls'
@@ -158,11 +160,17 @@ REST_FRAMEWORK = {
       'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     # Autres configurations
 }
 
+CORS_ALLOW_ALL_ORIGINS = True
 
+CSRF_COOKIE_HTTPONLY = True
 
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000'] 
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
