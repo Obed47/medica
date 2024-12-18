@@ -1,0 +1,39 @@
+.image {
+  width: 400px;
+  height: 500px;
+  margin-left: 10rem;
+}
+.mainHeader {
+  background-color: skyblue;
+  border-radius: 0 0 0 110px;
+  display: flex;
+}
+.mainText {
+  font-size: 70px;
+  width: 90%;
+  padding-top: 2rem;
+  font-family: "Poppins";
+  line-height: 80px;
+}
+.subText {
+  width: 50%;
+  padding-top: 2rem;
+}
+.textRight {
+  margin: 30px;
+}
+.buttonStart {
+  width: 13rem;
+  height: 4rem;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 20px 5px 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px black;
+}
+.buttonStart:hover {
+  background-color: rgb(4, 4, 211);
+  transform: scale(0.99);
+}

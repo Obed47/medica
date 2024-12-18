@@ -6,8 +6,9 @@ import google from "../assets/google.png";
 import eye from "../assets/eye.png";
 import hiddenEye from "../assets/hidden.png";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 const FormLogin = () => {
+  const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   const [pass, setPass] = useState("");
   const [confirmPass, setConfirmPass] = useState();
@@ -104,7 +105,13 @@ const FormLogin = () => {
           id="userName"
           placeholder="Choose a username"
         />
-        <button type="button" onClick={() => handlePost()}>
+        <button
+          type="button"
+          onClick={() => {
+            handlePost();
+            navigate("/illnesses");
+          }}
+        >
           Submit
         </button>
       </form>

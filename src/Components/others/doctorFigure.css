@@ -1,0 +1,27 @@
+.doc-container {
+  width: 20em;
+  height: 24em;
+  border: 2px solid rgba(168, 148, 255, 0.925);
+  outline: 0;
+  border-radius: 0.5em;
+  /*background: linear-gradient(rgba(255, 255, 255, 0),rgba(117, 104, 104, 0.342),rgba(24, 24, 24, 0.658));
+    */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: last baseline;
+  padding-bottom: 0.5em;
+}
+
+.doc-container .infos {
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.doc-container .infos .profession {
+  font-size: x-small;
+  color: rgb(129, 129, 129);
+  font-weight: 800;
+}
