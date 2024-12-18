@@ -1,4 +1,5 @@
 import React from "react";
+import "./map.css";
 import {
   MapContainer,
   TileLayer,
@@ -10,7 +11,9 @@ import "leaflet/dist/leaflet.css";
 import data from "./medicalCenters.json";
 import L, { PolyUtil } from "leaflet";
 import locationIcon from "../../assets/location.png";
-export default function Map() {
+import { useNavigate } from "react-router-dom";
+export default function MapComp() {
+  const navigate = useNavigate();
   //map details and implementation here
   console.log(data);
   const customIcon = new L.Icon({
@@ -26,31 +29,37 @@ export default function Map() {
     [3.8564, 11.5021], // End point
   ];
   return (
-    <MapContainer center={[3.848, 11.502]} zoom={13}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      {data.map((facility, index) => (
-        <Marker
-          key={index}
-          position={[facility.lat, facility.lon]}
-          icon={customIcon}
-        >
-          ;
-          <Popup>
-            <strong>{facility.tags.name}</strong>
-            <br />
-            <strong>
-              {facility.contact
-                ? facility.tags.contact.phone || contact.email
-                : " no contact"}
-            </strong>
-            <strong>{facility.tags.email}</strong>
-          </Popup>
-        </Marker>
-      ))}
-      <Polyline positions={pathCoordinates} color="red" weight={5} />
-    </MapContainer>
+    <div>
+      <MapContainer center={[3.848, 11.502]} zoom={13}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {data.map((facility, index) => (
+          <Marker
+            key={index}
+            position={[facility.lat, facility.lon]}
+            icon={customIcon}
+          >
+            ;
+            <Popup>
+              <strong>{facility.tags.name}</strong>
+              <br />
+              <strong>
+                {facility.contact
+                  ? facility.tags.contact.phone || contact.email
+                  : " no contact"}
+              </strong>
+              <strong>{facility.tags.email}</strong>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+      <div className="buttonContainer">
+        <button className="backButton" onClick={() => navigate("/toChatbot")}>
+          Back
+        </button>
+      </div>
+    </div>
   );
 }

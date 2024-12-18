@@ -1,0 +1,15 @@
+.backButton {
+  width: 10rem;
+  height: 3rem;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #b3b3e1;
+  box-shadow: 2px 2px 5px;
+}
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
