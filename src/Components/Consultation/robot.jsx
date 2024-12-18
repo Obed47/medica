@@ -10,9 +10,9 @@ export default function Robot() {
 
       <div className="mainRobot">
         <img className="w-50 h-50" src={robotImage} alt="" />
-        <div className="flex items-center m-10">
-          <input className="w-20 h-20 rounded-md p-5" type="checkbox" />
-          <p className="p-10">
+        <div className="flex items-center m-5 w-30">
+          <input className="w-10 h-10 rounded-md p-5" type="checkbox" />
+          <p className="p-10 justify-start">
             Be rest assured we value your privacy and confidentiality and
             strictly respect and keep that private. Please conscent to allow
             Medica access your personal data for better performance

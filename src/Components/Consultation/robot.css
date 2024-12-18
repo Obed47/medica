@@ -1,6 +1,6 @@
 .mainRobot img {
-  height: 700px;
-  width: 700px;
+  height: 600px;
+  width: 600px;
   padding: 10px;
 }
 .mainRobot p {
@@ -27,4 +27,8 @@
 .principalMain {
   display: flex;
   align-items: flex-start;
+}
+.text {
+  width: 200px;
+  border: 2px solid red;
 }

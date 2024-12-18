@@ -13,7 +13,9 @@ export default function Navigation() {
         <Route path="/" element={<MapComp />} />
         <Route path="/illnesses" element={<GetSymptoms />} />
         <Route path="/welcome" element={<WelcomePage />} />
+        <Route path="/toChatbot" element={<Robot />} />
         <Route path="/consultation" element={<ConsultationPage />} />
+        <Route path="/map" element={<MapComp />} />
       </Routes>
     </div>
   );

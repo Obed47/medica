@@ -8,12 +8,12 @@ export default function Options() {
   const navigate = useNavigate();
   return (
     <div className="mainOptions">
-      <ul onClick={() => navigate("/consultation")}>
-        <li>
+      <ul>
+        <li onClick={() => navigate("/toChatbot")}>
           <img src={heart} alt="" />
           <p>Get Consulted</p> <span></span>
         </li>
-        <li onClick={() => navigate("/consultationHistory")}>
+        <li onClick={() => navigate("/consultation")}>
           <img src={timeLogo} alt="" />
           <p>Past consultations</p> <span> </span>
         </li>
