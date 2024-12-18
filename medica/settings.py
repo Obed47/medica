@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3uxqds*&_a2lu+*3mg&0@a3=u0t14r0y2_r*e*91kpro86cn5r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.156, 0.0.0.0, localhost'] 
+ALLOWED_HOSTS = ['192.168.1.101', '0.0.0.0', 'localhost']  
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework.authtoken',
-    'historic_app'
+    'historic_app',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'medica.urls'
