@@ -7,7 +7,7 @@ const ConsultationHistory = () => {
 
   const FetchData = () => {
     axios
-      .get("http://192.168.1.101:8001/api/consultations")
+      .get("api/consultations")
       .then((res) => {
         setConsultation(res.data);
         console.log(consultation);
@@ -38,7 +38,7 @@ const ConsultationHistory = () => {
               key={item.id}
               illness={item.symptome}
               remedy={item.traitement}
-              date={item.date_consultation}
+              Date={item.date_consultation}
             />
           </div>
         );
