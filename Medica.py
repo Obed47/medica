@@ -4,13 +4,27 @@ from langchain.schema import StrOutputParser
 from langchain.schema.runnable.config import RunnableConfig
 # modele
 import os
+import random
 from langchain_groq import ChatGroq
+from datetime import datetime
 
 import chainlit as cl
+import psycopg2 # type: ignore
 
 import json
 import re
 from collections import defaultdict
+
+
+def get_db_connection():
+    return psycopg2.connect(
+        dbname="medica",
+        user="postgres",
+        password="postgres",
+        host="localhost",
+        port="5432"
+    )
+
 
 os.environ["GROQ_API_KEY"] = "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"
 
@@ -22,6 +36,14 @@ user_consultation = defaultdict(lambda: {
     "traitement": [],
     "conseil": [],
 })
+
+# Id pour les consultations
+consultation_id = random.randint(1, 1000)
+
+# Obtenir la date actuelle du système
+now = datetime.now()
+_date = now.strftime("%Y-%m-%d")
+
 
 # Extraction des données pertinentes
 def extract_symptoms(text):
@@ -36,31 +58,74 @@ def extract_treatment(text):
 def extract_conseil(text):
     return re.findall(r"\bconseil[s]? : (.+?)[\.]", text)
 
-# Sauvegarder ou afficher les données de consultation
-def save_or_display_consultation(user_id):
-    consultation = user_consultation[user_id]
-    
-    # Affichage dans le terminal
-    print(f"Consultation pour l'utilisateur {user_id}:")
-    print(f"Symptômes : {', '.join(consultation['symptomes'])}")
-    print(f"Maladies trouvées : {', '.join(consultation['maladie'])}")
-    print(f"Traitements proposés : {', '.join(consultation['traitement'])}")
-    print(f"Conseils : {', '.join(consultation['conseil'])}")
+def save_consultation_to_db(user_id, consultation):
+    connection = get_db_connection()
+    try:
+        with connection.cursor() as cursor:
+            # Insertion ou mise à jour des données de consultation
+            cursor.execute(
+                """
+                INSERT INTO Consultation (idconsultation, symptomes, maladie, traitement, conseils, date, utilisateur_id)
+                VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """,
+                (
+                    consultation_id,
+                    consultation["symptomes"][0],
+                    consultation["maladie"][0],
+                    consultation["traitement"][0],
+                    consultation["conseil"][0],
+                    _date,
+                    user_id,
+                )
+            )
+        connection.commit()
+    except Exception as e:
+        print(f"Erreur lors de la sauvegarde : {e}")
+    finally:
+        connection.close()
 
-    # Exemple de sauvegarde dans un fichier JSON (remplacer par une base de données si nécessaire)
-    with open(f"consultation_{user_id}.json", "w") as f:
-        json.dump(consultation, f, indent=4)
+
+def get_data_from_db(user_id):
+        connection = get_db_connection()
+        try:
+            with connection.cursor() as cursor:
+                cursor.execute(
+                    """
+                    SELECT nom, alergie, maladie_hereditaire 
+                    FROM utilisateur
+                    WHERE id = %s;
+                    """,
+                    (user_id,)
+                )
+                result = cursor.fetchone()
+                if result:
+                    return {
+                        "nom": result[0],
+                        "allergies": result[1],
+                        "maladies": result[2],
+                    }
+                else:
+                    return None
+        except Exception as e:
+            print(f"Erreur lors de la récupération : {e}")
+        finally:
+            connection.close()
+
 
 @cl.on_chat_start
 async def on_chat_start():
-    user_id = cl.user_session.get("id", "default_user")
     
+    #On recupère l'id de l'utilisateur
+    with open('config.json', 'r') as file:
+        id = json.load(file)
+
+    user_id = id["id"]
+
     # Initialiser les données utilisateur
     if user_id not in user_memory:
         user_memory[user_id] = []
 
-    with open('config.json', 'r') as file:
-        data = json.load(file)
+    data = get_data_from_db(user_id)
 
     try:
         user_data = data
@@ -143,9 +208,10 @@ async def on_message(message: cl.Message):
         user_consultation[user_id]["traitement"].extend(extract_treatment(msg.content.lower()))
         user_consultation[user_id]["conseil"].extend(extract_conseil(msg.content.lower()))
 
-        save_or_display_consultation(user_id)
+        save_consultation_to_db(user_id, user_consultation[user_id])
 
         user_consultation[user_id]["symptomes"] = []
         user_consultation[user_id]["maladie"] = []
         user_consultation[user_id]["traitement"] = []
         user_consultation[user_id]["conseil"] = []
+
