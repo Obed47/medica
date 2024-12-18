@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 from django.contrib.auth.models import User,AbstractUser
 import uuid 
 from django.utils import timezone 
@@ -16,6 +15,10 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f"Profil de {self.user.username}"
+    
+    class Meta:
+        db_table = 'userprofile'
+        ordering = ('-id',)
 
 
 class consultation(models.Model):
@@ -25,15 +28,11 @@ class consultation(models.Model):
     traitement = models.CharField(max_length=255,)
     conseil = models.TextField(max_length=255, blank=True, null= False)
     date_consultation= models.DateTimeField(blank=True)
+    
+    class Meta:
+        db_table = 'consultation'
+        ordering = ('-id',)
 
 
-class PasswordResetCode(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    code = models.CharField(max_length=6, unique=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
-    
-    def is_valid(self):
-        return timezone.now() < self.created_at + timedelta(minutes=15) #code valide 15 minutes
-    
+
     
