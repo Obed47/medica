@@ -1,10 +1,10 @@
 .allergies{
     border: 1px solid rgb(148, 148, 148);
     box-sizing: border-box;
-    width: 95%;
+    width: 70%;
     border-radius: 1em;
     background-color: rgb(242, 252, 255);
-    padding: 2em 0 2em 2em;
+    padding: 0 0 1em 2em;
 }
 
 .allergies h3{
@@ -26,35 +26,37 @@
 .allergies .content .button input{
     border: 0;
     outline: 0;
-    padding: 1.5em 8.5em 1.5em 1em;
+    padding: 1em 7em 1em 1em;
     border-radius: 10px;
     background-color: #d6d6d6d5;
     margin-right: 1.5em;
 }
 
 .allergies .content .button input::placeholder{
-    font-weight: 600;
+    font-weight: 500;
     color:rgba(120, 120, 243, 1);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
+
 .allergies .content button{
-    width: 8em;
-    height: 4em;
+    width: 6.5em;
+    height: 3.25em;
     background: rgba(120, 120, 243, 1);
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border-radius: 7px;
     border: 0;
     outline: 0;
-    box-shadow: -1px 3px 10px grey;    
+    box-shadow: -1px 3px 10px grey;  
+    padding-right: 0.5em; 
 }
 
 .allergies .content button img{
-    width: 3.5em;
-    height: 3.5em;
+    width: 2.5em;
+    height: 2.5em;
 
 }
 

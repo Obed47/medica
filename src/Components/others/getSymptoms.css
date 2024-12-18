@@ -13,7 +13,7 @@
     rgb(222, 232, 245),
     #6164f3
   );
-  padding: 5em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
   display: flex;
   align-items: top;
   justify-content: space-between;
@@ -30,28 +30,27 @@
 h3 {
   color: rgba(91, 91, 91, 1);
   font-family: "poppins-b";
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 50px;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .getSymptoms .get h3 {
   font-family: "poppins-b";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .getSymptoms .submit {
-  margin-right: 5%;
+  margin-right: 17.5em;
   margin-top: 2em;
   align-self: end;
-  width: 10em;
+  width: 9em;
   height: 4em;
   background: rgb(108, 108, 241);
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 7px;
   border: 0;
   outline: 0;
@@ -59,10 +58,12 @@ h3 {
 }
 
 .getSymptoms .submit img {
-  width: 2em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .getSymptoms .submit span {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: large;
+  margin-right: 1em;
 }
