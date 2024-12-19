@@ -9,7 +9,9 @@
 
 .collaborators-container .scroll {
   width: 88%;
-  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
   margin: 1em 0 1em 0;
 }
 
