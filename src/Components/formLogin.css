@@ -57,6 +57,11 @@
     
 }
 
+.formLogin form input{
+    font-size: medium;
+    font-weight: lighter;
+} 
+
 .formLogin form input::placeholder{
     font-weight: lighter;
     color: rgb(78, 78, 78);
