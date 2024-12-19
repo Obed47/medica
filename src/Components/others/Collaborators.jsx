@@ -13,23 +13,23 @@ const Collaborators = () => {
         <div className="figures">
           <DoctorFigure
             background={dr1}
-            name={"Dr Kalera H"}
-            post={"Ophtamologist"}
+            name={"Dr HONORINE STEFANIE"}
+            post={"Cardiologue"}
           />
           <DoctorFigure
             background={dr4}
-            name={"Dr Kalera H"}
-            post={"Ophtamologist"}
+            name={"Dr WIRNGO CLAUDE"}
+            post={"Généraliste"}
           />
           <DoctorFigure
             background={dr3}
-            name={"Dr Kalera H"}
-            post={"Ophtamologist"}
+            name={"Dr ANGE BOKOU"}
+            post={"Nutritionniste"}
           />
           <DoctorFigure
             background={dr2}
-            name={"Dr Kalera H"}
-            post={"Ophtamologist"}
+            name={"Dr MABOU PAUL"}
+            post={"Sage-Homme"}
           />
         </div>
       </div>
