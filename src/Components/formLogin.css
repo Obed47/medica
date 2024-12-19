@@ -1,47 +1,43 @@
-
 @font-face {
-    font-family: "poppins";
-    src: url("../assets/Poppins-Regular.ttf");
+  font-family: "poppins";
+  src: url("../assets/Poppins-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'poppins-m';
-    src: url("../assets/Poppins-Medium.ttf");
+  font-family: "poppins-m";
+  src: url("../assets/Poppins-Medium.ttf");
 }
 
 .formLogin{
     width: max-content;
-    height: max-content;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 5em;
     padding: 1em;
-    margin-top: -2em;
 }
 
-.formLogin h1{
-    font-size: 2em;
-    font-weight: 600;
-    align-self: center;
-    font-family: "poppins-m";
-    user-select: none;
+.formLogin h1 {
+  font-size: 2em;
+  font-weight: 600;
+  align-self: center;
+  font-family: "poppins-m";
+  user-select: none;
 }
 
-.formLogin h5{
-    text-align: center;
-    font-weight:500 ;
-    margin-bottom: 1em;
-    user-select: none;
-
+.formLogin h5 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1em;
+  user-select: none;
 }
 
-.formLogin a{
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(12, 0, 175);
-    user-select: none;
-
+.formLogin a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(12, 0, 175);
+  user-select: none;
 }
 
 /*------------------    FORM    -------------------------*/
@@ -50,7 +46,7 @@
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    gap: 0.5em;
+    gap: 1em;
     grid-template-columns: 13em 13em;
     margin-bottom: 2em;
     user-select: none;
@@ -58,36 +54,31 @@
     
 }
 
-.formLogin form input{
-    font-size: medium;
-    font-weight: lighter;
-} 
-
-.formLogin form input::placeholder{
-    font-weight: lighter;
-    color: rgb(78, 78, 78);
+.formLogin form input::placeholder {
+  font-weight: lighter;
+  color: rgb(78, 78, 78);
 }
 
-.formLogin form input{
-    width: 100%;
-    padding: 0 0.5em 0 1em;
-    height: 3.25em;
-    background-color: rgba(146, 145, 145, 0.541);
-    border: 0;
-    outline: 0;
-    border-radius: 0.25em;
+.formLogin form input {
+  width: 100%;
+  padding: 0 0.5em 0 1em;
+  height: 3.25em;
+  background-color: rgba(146, 145, 145, 0.541);
+  border: 0;
+  outline: 0;
+  border-radius: 0.25em;
 }
 
-.formLogin form input:nth-child(2){
-    width: 14em;
+.formLogin form input:nth-child(2) {
+  width: 14em;
 }
 
-.formLogin form input[type='email']{
-    grid-column: 1/4;
+.formLogin form input[type="email"] {
+  grid-column: 1/4;
 }
 
-.formLogin form .userName{
-    grid-column: 1/4;
+.formLogin form .userName {
+  grid-column: 1/4;
 }
 
 .formLogin form .illness, form .diseases{
@@ -95,46 +86,59 @@
 }
 
 
-.formLogin form span{
-    grid-column: 1/4;
-    border-radius: 0.25em;
-    background-color: rgba(146, 145, 145, 0.541);
-    padding: 0 0.75em 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    user-select: none;
+.formLogin form span {
+  grid-column: 1/4;
+  border-radius: 0.25em;
+  background-color: rgba(146, 145, 145, 0.541);
+  padding: 0 0.75em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
 }
 
-.formLogin form input[type='password']{
-    background-color: rgba(146, 145, 145, 0.541);
+.formLogin form input[type="password"] {
+  background-color: rgba(146, 145, 145, 0.541);
 }
 
-.formLogin form span img{
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
-    user-select: none;
-
+.formLogin form span img {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  user-select: none;
 }
 
-.formLogin form input[type='password']{
-    border-radius: 0.75em;
-    background-color: transparent;
-    padding: 0.5em 0 0.5em 1em;
-    width: 100%;
+.formLogin form input[type="password"] {
+  border-radius: 0.75em;
+  background-color: transparent;
+  padding: 0.5em 0 0.5em 1em;
+  width: 100%;
 }
 
-.formLogin form button{
-    grid-column: 1/4;
-    background-color: rgba(17, 0, 255, 0.849);
-    align-self: center;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 1em;
-    margin-top: 1em;
-    height: 3.25em;
-    border: 0;
-    outline: 0;
-    border-radius: 0.25em;
+.formLogin form button {
+  grid-column: 1/4;
+  background-color: rgba(17, 0, 255, 0.849);
+  align-self: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 1em;
+  height: 3.25em;
+  border: 0;
+  outline: 0;
+  border-radius: 0.25em;
+}
+.calendarBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendarBox img {
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+}
+.calendarBox h3 {
+  font-size: 16px;
+  padding: 5px;
 }

@@ -8,7 +8,7 @@ import hiddenEye from "../assets/hidden.png";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import calendarIcon from "../assets/calendar.svg";
 import { useNavigate } from "react-router-dom";
 
 const FormLogin = () => {
@@ -20,7 +20,7 @@ const FormLogin = () => {
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(new Date(2000, 9, 1));
 
   const handleSetVisible = () => {
     setVisible(!visible);
@@ -32,7 +32,7 @@ const FormLogin = () => {
       .post("http://192.168.1.101:8001/register", {
         first_name: name,
         last_name: surname,
-        date_naissance: "2000-02-23",
+        date_naissance: startDate,
         add_email: email,
         username: username,
         password: pass,
@@ -111,22 +111,15 @@ const FormLogin = () => {
           id="userName"
           placeholder="Choose a username"
         />
-        <DatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
-        />
-        <input
-          type="text"
-          className="diseases"
-          id="diseases"
-          placeholder="Inherited diseases"
-        />
-        <input
-          type="text"
-          className="illness"
-          id="illness"
-          placeholder="illness"
-        />
+        <div className="calendarBox">
+          <img src={calendarIcon} alt="" />
+          <DatePicker
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
+          <h3>DOB</h3>
+        </div>
+
         <button
           type="button"
           onClick={() => {
