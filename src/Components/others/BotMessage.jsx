@@ -15,7 +15,7 @@ const BotMessage = () => {
             to see a doctor
           </p>
           <button
-            onClick={() => navigate("/consultation")}
+            onClick={() => navigate("/toChatbot")}
             className="buttonStart"
           >
             Get Started

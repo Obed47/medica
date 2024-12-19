@@ -16,7 +16,7 @@ export default function MainHeader() {
           No Effort With Medica
         </h4>
         <button
-          onClick={() => navigate("/consultation")}
+          onClick={() => navigate("/toChatbot")}
           className="buttonStart"
         >
           Get Started
