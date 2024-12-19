@@ -115,7 +115,18 @@ const FormLogin = () => {
           selected={startDate}
           onChange={(date) => setStartDate(date)}
         />
-
+        <input
+          type="text"
+          className="diseases"
+          id="diseases"
+          placeholder="Inherited diseases"
+        />
+        <input
+          type="text"
+          className="illness"
+          id="illness"
+          placeholder="illness"
+        />
         <button
           type="button"
           onClick={() => {
