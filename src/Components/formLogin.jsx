@@ -21,7 +21,9 @@ const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [startDate, setStartDate] = useState(new Date(2000, 9, 1));
-
+  //animated background starts
+  
+  //ends
   const handleSetVisible = () => {
     setVisible(!visible);
   };
