@@ -25,7 +25,7 @@ const FormLogin = () => {
   const handlePost = () => {
     console.log(name, surname, pass);
     axios
-      .post("http://192.168.43.156:8000/register", {
+      .post("http://192.168.1.101:8001/register", {
         first_name: name,
         last_name: surname,
         date_naissance: "2000-02-23",
