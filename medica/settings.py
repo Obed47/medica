@@ -87,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'medica',
-        'USER': 'admin',
-        'PASSWORD': 'admin123',
+        'USER': 'carine',
+        'PASSWORD': 'carine123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -96,7 +96,7 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
