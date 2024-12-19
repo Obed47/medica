@@ -4,5 +4,6 @@ djangorestframework==3.15.2
 djangorestframework-simplejwt
 #django-rest-authtoken==2.1.4
 psycopg2-binary
+django-cors-headers
 #sqlparse==0.4.4
 #tzdata==2024.1

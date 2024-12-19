@@ -96,6 +96,7 @@ DATABASES = {
     }
 }
 
+<<<<<<< HEAD
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': [
 #         'rest_framework.permissions.IsAuthenticated',
@@ -104,6 +105,16 @@ DATABASES = {
 #         'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
 #     )
 # }
+=======
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
+    )
+}
+>>>>>>> 5669ad74e8b36d3167a622c3505d9e69c1b55737
 
 # SIMPLE_JWT = {"SIGNING_KEY": "5ahp8kseKOVB_x"}
 
