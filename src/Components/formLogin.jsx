@@ -43,27 +43,38 @@ const FormLogin = () => {
       pass,
       confirmPass
     );
-    axios
-      .post("http://192.168.1.101:8001/register", {
-        first_name: name,
-        last_name: surname,
-        date_naissance: startDate,
-        maladie_hereditaire: illnesses,
-        allergies: allergies,
-        add_email: email,
-        username: username,
-        password: pass,
-        password1: confirmPass,
-      })
-      .then((response) => {
-        console.log("success sent" + response);
-      })
-      .catch((err) => {
-        console.error(
-          "Error details:",
-          err.response ? err.response.data : err.message
-        );
-      });
+    
+
+    try {
+          axios.post("http://192.168.1.101:8001/register", {
+            first_name: name,
+            last_name: surname,
+            date_naissance: startDate,
+            maladie_hereditaire: illnesses,
+            allergies: allergies,
+            add_email: email,
+            username: username,
+            password: pass,
+            password1: confirmPass,
+          }, {
+            headers: {
+              'Content-Type': 'application/json',
+            }})
+          /*.then((response) => {
+            console.log("success sent" + response);
+          })
+          .catch((err) => {
+            console.log(err);
+          });*/
+    } catch (error) {
+      if (error.response) {
+        console.error('Erreur serveur :', error.response.data); // Message d'erreur fourni par le serveur
+      } else {
+        console.error('Erreur réseau :', error.message);
+      }
+    }
+
+      
   };
   return (
     <div className="formLogin">
@@ -79,6 +90,7 @@ const FormLogin = () => {
           className="firstName"
           id="firstName"
           placeholder="First name"
+          required
         />
         <input
           onChange={(e) => setSurname(e.target.value)}
@@ -86,6 +98,7 @@ const FormLogin = () => {
           className="lastName"
           id="lastName"
           placeholder="Last name"
+          required
         />
 
         <input
@@ -94,6 +107,7 @@ const FormLogin = () => {
           className="email"
           id="email"
           placeholder="Email"
+          required
         />
 
         <span>
@@ -103,6 +117,7 @@ const FormLogin = () => {
             className="password"
             id="password"
             placeholder="Enter your password"
+            required
           />
           <img
             onClick={() => handleSetVisible()}
@@ -117,6 +132,7 @@ const FormLogin = () => {
             className="password"
             id="password2"
             placeholder="Confirm Password"
+            required
           />
           <img
             onClick={() => handleSetVisible()}
@@ -130,6 +146,7 @@ const FormLogin = () => {
           className="userName"
           id="userName"
           placeholder="Choose a username"
+          required
         />
         <div className="calendarBox">
           <img src={calendarIcon} alt="" />
