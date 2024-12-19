@@ -11,29 +11,20 @@ const Footer = () => {
       <div className="messages">
         <div>
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
-          <br />
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
         </div>
         <div>
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
-          <br />
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
         </div>
         <div>
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
-          <br />
           Fill in info about your symtoms,
-          <br />
           heriditary illnesses and others
         </div>
       </div>

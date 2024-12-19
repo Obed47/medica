@@ -10,7 +10,7 @@
 }
 
 .footer .messages {
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,8 +37,8 @@
 }
 
 .socials-medias .images img {
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   cursor: pointer;
 }
 

@@ -15,4 +15,11 @@
   padding-top: 25px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+  transition: .5s;
+  user-select: none;
+}
+
+.MainQualities ul li:hover{
+  color:rgb(169, 78, 255);
 }

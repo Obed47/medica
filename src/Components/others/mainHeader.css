@@ -1,26 +1,41 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/Poppins-Medium.ttf");
+}
+
+*{
+  user-select: none;
+}
+
 .image {
-  width: 400px;
-  height: 500px;
-  margin-left: 10rem;
+  width: 35em;
+  height: 80vh;
+  margin-left: 5rem;
 }
 .mainHeader {
+  color: #fff;
   background-color: skyblue;
   border-radius: 0 0 0 110px;
   display: flex;
 }
+
 .mainText {
-  font-size: 70px;
-  width: 90%;
+  font-size: 4em;
+  width: 75%;
   padding-top: 2rem;
   font-family: "Poppins";
-  line-height: 80px;
+  line-height: 1.125em;
+  margin: -0.5em 0 0 1em;
 }
 .subText {
   width: 50%;
   padding-top: 2rem;
+  margin-left: 4em;
+  font-size: 1.125em;
 }
 .textRight {
-  margin: 30px;
+  margin: 3em;
+  
 }
 .buttonStart {
   width: 13rem;
@@ -29,9 +44,10 @@
   background-color: blue;
   color: white;
   font-weight: bold;
-  border-radius: 5px 20px 5px 20px;
-  margin-top: 20px;
+  border-radius: 0.5em;
+  margin: 2em 0 0 20em;
   box-shadow: 2px 2px 5px black;
+  transition: .25s;
 }
 .buttonStart:hover {
   background-color: rgb(4, 4, 211);

@@ -1,11 +1,10 @@
 .doc-container {
-  width: 20em;
-  height: 24em;
+  width: 18em;
+  height: 20em;
   border: 2px solid rgba(168, 148, 255, 0.925);
   outline: 0;
   border-radius: 0.5em;
-  /*background: linear-gradient(rgba(255, 255, 255, 0),rgba(117, 104, 104, 0.342),rgba(24, 24, 24, 0.658));
-    */
+  background-color: linear-gradient(rgb(124, 123, 123),rgb(83, 83, 83),rgba(3, 3, 3, 0.623));
   background-size: cover;
   background-position: center;
   display: flex;
@@ -21,7 +20,7 @@
 }
 
 .doc-container .infos .profession {
-  font-size: x-small;
-  color: rgb(129, 129, 129);
+  font-size: small;
+  color: rgb(196, 193, 193);
   font-weight: 800;
 }

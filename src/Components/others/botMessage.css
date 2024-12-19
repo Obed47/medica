@@ -10,22 +10,21 @@
   color: #fff;
   background-color: rgba(89, 52, 255, 0.562);
   border-radius: 2em;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   gap: 1em;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   justify-content: center;
   flex: none;
-  padding: 3em;
+  padding: 1em 2em 0 1em;
 }
 
 .main-container img {
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
   background-color: azure;
-  padding: 1em;
   border-radius: 2em;
   border: 2px solid #ececec;
   background: linear-gradient(
@@ -46,11 +45,13 @@
 
 .main-container .container p {
   width: 100%;
-  font-weight: 900;
+  font-weight: 600;
   font-size: larger;
   text-align: justify;
 }
 
 .main-container .container button {
   align-self: flex-end;
+  height: 6em;
+  width: 10em;
 }
