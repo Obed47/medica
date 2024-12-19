@@ -21,20 +21,35 @@ const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [startDate, setStartDate] = useState(new Date(2000, 9, 1));
+  const [allergies, setAllergies] = useState("");
+  const [illnesses, setIllnesses] = useState("");
   //animated background starts
-  
+
   //ends
   const handleSetVisible = () => {
     setVisible(!visible);
   };
 
   const handlePost = () => {
-    console.log(name, surname, pass);
+    console.log(
+      name,
+      surname,
+      pass,
+      startDate,
+      illnesses,
+      allergies,
+      email,
+      username,
+      pass,
+      confirmPass
+    );
     axios
       .post("http://192.168.1.101:8001/register", {
         first_name: name,
         last_name: surname,
         date_naissance: startDate,
+        maladie_hereditaire: illnesses,
+        allergies: allergies,
         add_email: email,
         username: username,
         password: pass,
@@ -123,12 +138,14 @@ const FormLogin = () => {
         </div>
         <div className="deseases-illness">
           <input
+            onChange={(e) => setIllnesses(e.target.value)}
             type="text"
             className="illness"
             id="illness"
-            placeholder="Illness"
+            placeholder="Allergies"
           />
           <input
+            onChange={(e) => setAllergies(e.target.value)}
             type="text"
             className="deseases"
             id="deseases"
