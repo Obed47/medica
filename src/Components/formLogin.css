@@ -50,19 +50,19 @@
     grid-template-columns: 13em 13em;
     margin-bottom: 2em;
     user-select: none;
-
     
 }
 
 .formLogin form input::placeholder {
-  font-weight: lighter;
+  font-weight: 500;
   color: rgb(78, 78, 78);
 }
 
 .formLogin form input {
+    font-family: "poppins";
   width: 100%;
-  padding: 0 0.5em 0 1em;
-  height: 3.25em;
+  padding-left: 1em;
+  height: 2.5em;
   background-color: rgba(146, 145, 145, 0.541);
   border: 0;
   outline: 0;
