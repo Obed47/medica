@@ -121,6 +121,20 @@ const FormLogin = () => {
           />
           <h3>DOB</h3>
         </div>
+        <div className="deseases-illness">
+          <input
+            type="text"
+            className="illness"
+            id="illness"
+            placeholder="Illness"
+          />
+          <input
+            type="text"
+            className="deseases"
+            id="deseases"
+            placeholder="Deseases"
+          />
+        </div>
 
         <button
           type="button"

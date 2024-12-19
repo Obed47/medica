@@ -7,6 +7,7 @@ const LoginPage = () => {
     <div className="login">
       <BotMessage />
       <FormLogin />
+      
     </div>
   );
 };
