@@ -59,7 +59,10 @@ const FormLogin = () => {
         console.log("success sent" + response);
       })
       .catch((err) => {
-        console.log(err);
+        console.error(
+          "Error details:",
+          err.response ? err.response.data : err.message
+        );
       });
   };
   return (
@@ -132,7 +135,7 @@ const FormLogin = () => {
           <img src={calendarIcon} alt="" />
           <DatePicker
             selected={startDate}
-            onChange={(date) => setStartDate(date)}
+            onChange={(date) => setStartDate(date.toISOString().split("T")[0])}
           />
           <h3>DOB</h3>
         </div>
