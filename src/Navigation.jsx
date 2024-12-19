@@ -10,7 +10,7 @@ export default function Navigation() {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/illnesses" element={<GetSymptoms />} />
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/toChatbot" element={<Robot />} />

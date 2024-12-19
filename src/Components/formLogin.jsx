@@ -6,8 +6,10 @@ import google from "../assets/google.png";
 import eye from "../assets/eye.png";
 import hiddenEye from "../assets/hidden.png";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
+import { useNavigate } from "react-router-dom";
 
 const FormLogin = () => {
   const navigate = useNavigate();
@@ -18,6 +20,8 @@ const FormLogin = () => {
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
+
   const handleSetVisible = () => {
     setVisible(!visible);
   };
@@ -107,6 +111,11 @@ const FormLogin = () => {
           id="userName"
           placeholder="Choose a username"
         />
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+        />
+
         <button
           type="button"
           onClick={() => {

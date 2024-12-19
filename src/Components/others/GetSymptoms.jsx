@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./getSymptoms.css";
 import BotImage from "./BotImage";
 import Allergies from "./Allergies";
 import Inherited from "./Inherited";
+import axios from "axios";
 import validate from "../../assets/validate.png";
 import { useNavigate } from "react-router-dom";
 const GetSymptoms = () => {
@@ -16,6 +17,20 @@ const GetSymptoms = () => {
     setAllIllnesses(data);
     console.log(allIllnesses);
   };
+  const sendToback = () => {
+    axios
+      .patch("http://192.168.1.101:8001/update-profile/", {
+        maladie_hereditaire: allIllnesses,
+        allergies: allAllergies,
+      })
+      .then((response) => {
+        console.log("suceess sending allergies and illnesses" + response);
+      })
+      .catch((error) => {
+        console.log("Error: ", error);
+      });
+  };
+
   const navigate = useNavigate();
   return (
     <div className="getSymptoms">
@@ -27,7 +42,10 @@ const GetSymptoms = () => {
         {console.log(allAllergies)}
         <Inherited sendAbove={handleSetIllnesses} />
         <button
-          onClick={() => navigate("/welcome")}
+          onClick={() => {
+            sendToback();
+            navigate("/welcome");
+          }}
           type="submit"
           className="submit"
         >
