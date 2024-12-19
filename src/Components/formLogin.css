@@ -10,7 +10,7 @@
 
 .formLogin{
     width: max-content;
-    height: 85vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    gap: 1em;
+    gap: 0.5em;
     grid-template-columns: 13em 13em;
     margin-bottom: 2em;
     user-select: none;
@@ -70,7 +70,7 @@
 }
 
 .formLogin form input:nth-child(2) {
-  width: 14em;
+  width: 13.5em;
 }
 
 .formLogin form input[type="email"] {
@@ -81,8 +81,9 @@
   grid-column: 1/4;
 }
 
-.formLogin form .illness, form .diseases{
-    grid-column: 1/4;
+.formLogin form .deseases-illness{
+    width: 100%;
+    width: 13.5em;
 }
 
 
