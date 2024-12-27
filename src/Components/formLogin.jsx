@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./formLogin.css";
-import apple from "../assets/apple.png";
-import google from "../assets/google.png";
 import eye from "../assets/eye.png";
 import hiddenEye from "../assets/hidden.png";
 import axios from "axios";
@@ -10,6 +8,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import calendarIcon from "../assets/calendar.svg";
 import { useNavigate } from "react-router-dom";
+import { userIdentifier } from "../App";
 
 const FormLogin = () => {
   const navigate = useNavigate();
@@ -23,9 +22,7 @@ const FormLogin = () => {
   const [startDate, setStartDate] = useState(new Date(2000, 9, 1));
   const [allergies, setAllergies] = useState("");
   const [illnesses, setIllnesses] = useState("");
-  //animated background starts
 
-  //ends
   const handleSetVisible = () => {
     setVisible(!visible);
   };
@@ -43,10 +40,12 @@ const FormLogin = () => {
       pass,
       confirmPass
     );
-    
 
     try {
-          axios.post("http://192.168.1.101:8001/register", {
+      axios
+        .post(
+          "http://37.60.244.227:2000/register",
+          {
             first_name: name,
             last_name: surname,
             date_naissance: startDate,
@@ -56,28 +55,29 @@ const FormLogin = () => {
             username: username,
             password: pass,
             password1: confirmPass,
-          }, {
+          },
+          {
             headers: {
-              'Content-Type': 'application/json',
-            }})
-          /*.then((response) => {
-            console.log("success sent" + response);
-          })
-          .catch((err) => {
-            console.log(err);
-          });*/
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then((succ) => {
+          console.log("Success posting data ", succ);
+        });
     } catch (error) {
       if (error.response) {
-        console.error('Erreur serveur :', error.response.data); // Message d'erreur fourni par le serveur
+        console.error("Erreur serveur :", error); // Message d'erreur fourni par le serveur
       } else {
-        console.error('Erreur réseau :', error.message);
+        console.error("Erreur réseau :", error.message);
       }
     }
-
-      
   };
+  const value = useContext(userIdentifier);
+  console.log(value);
   return (
     <div className="formLogin">
+      <button onClick={() => console.log(value)}> click me</button>
       <h1>Create an account</h1>
       <h5>
         Already have an account ?<NavLink>Log in</NavLink>
@@ -98,7 +98,7 @@ const FormLogin = () => {
           className="lastName"
           id="lastName"
           placeholder="Last name"
-          required
+          required="true"
         />
 
         <input
@@ -177,7 +177,7 @@ const FormLogin = () => {
           type="button"
           onClick={() => {
             handlePost();
-            navigate("/illnesses");
+            navigate("/welcome");
           }}
         >
           Submit

@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./consultationHistory.css";
 import PastConsultation from "./pastConsultation";
 import axios from "axios";
+import { userIdentifier } from "../../App";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
-
+  const userId = useContext(userIdentifier);
+  console.log(userId);
   const FetchData = () => {
     axios
-      .get("api/consultations")
+      //
+      .get("192.168.43.156/api/consultation")
       .then((res) => {
         setConsultation(res.data);
         console.log(consultation);

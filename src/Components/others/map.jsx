@@ -1,12 +1,6 @@
 import React from "react";
 import "./map.css";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  Polyline,
-} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import data from "./medicalCenters.json";
 import L, { PolyUtil } from "leaflet";
@@ -14,8 +8,6 @@ import locationIcon from "../../assets/location.png";
 import { useNavigate } from "react-router-dom";
 export default function MapComp() {
   const navigate = useNavigate();
-  //map details and implementation here
-  console.log(data);
   const customIcon = new L.Icon({
     iconUrl: locationIcon,
     iconSize: [32, 32],
@@ -47,7 +39,7 @@ export default function MapComp() {
               <br />
               <strong>
                 {facility.contact
-                  ? facility.tags.contact.phone || contact.email
+                  ? facility.tags.contact.phone || facility.tags.contact.email
                   : " no contact"}
               </strong>
               <strong>{facility.tags.email}</strong>
@@ -58,7 +50,8 @@ export default function MapComp() {
       <div className="buttonContainer">
         <button className="backButton" onClick={() => navigate("/toChatbot")}>
           Back
-        </button>
+        </button>{" "}
+        //map details and implementation here
       </div>
     </div>
   );
