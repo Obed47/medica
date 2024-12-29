@@ -74,6 +74,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['192.168.23.157', '0.0.0.0', 'localhost',]
 
 
+# ALLOWED_HOSTS = ['192.168.23.157', '0.0.0.0', 'localhost',]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,12 +129,12 @@ WSGI_APPLICATION = 'authentification.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'medica',
         'USER': 'carine',
         'PASSWORD': 'carine123',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
