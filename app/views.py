@@ -137,6 +137,7 @@ def register(request):
         allergies = data.get("allergies")
         allergies_str = ', '.join(allergies.split(',')) if allergies else None
         maladie_hereditaire = data.get("maladie_hereditaire")
+        maladie_hereditaire_str = ', '.join(maladie_hereditaire.split(',')) if maladie_hereditaire else None
 
       
         
@@ -165,7 +166,7 @@ def register(request):
             first_name=firstname,
             last_name=lastname,
             date_naissance=date_naissance,
-            maladie_hereditaire=maladie_hereditaire,
+            maladie_hereditaire=maladie_hereditaire_str,
             allergies=allergies_str,
             add_email=email
         )
