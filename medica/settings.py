@@ -87,16 +87,15 @@ WSGI_APPLICATION = 'medica.wsgi.application'
 }"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'medica',
         'USER': 'carine',
         'PASSWORD': 'carine123',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
-<<<<<<< HEAD
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': [
 #         'rest_framework.permissions.IsAuthenticated',
@@ -105,7 +104,6 @@ DATABASES = {
 #         'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
 #     )
 # }
-=======
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
@@ -114,7 +112,6 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
     )
 }
->>>>>>> 5669ad74e8b36d3167a622c3505d9e69c1b55737
 
 # SIMPLE_JWT = {"SIGNING_KEY": "5ahp8kseKOVB_x"}
 
