@@ -15,6 +15,10 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return f"Profil de {self.user.username}"
+    
+    class Meta:
+        db_table = 'userprofile'
+        ordering = ('-id',)
 
 
 class consultation(models.Model):
@@ -24,6 +28,10 @@ class consultation(models.Model):
     traitement = models.CharField(max_length=255,)
     conseil = models.TextField(max_length=255, blank=True, null= False)
     date_consultation= models.DateTimeField(blank=True)
+
+    class Meta:
+        db_table = 'consultation'
+        ordering = ('-id',)
 
 
 class PasswordResetCode(models.Model):

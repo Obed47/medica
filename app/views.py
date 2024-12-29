@@ -185,7 +185,7 @@ def register(request):
         message = f"Bienvenue {firstname} {lastname} \nNous sommes heureux de vous compter parmi nous.\n\nMerci,\nStefan Medica"
         send_mail(subject, message, settings.EMAIL_HOST_USER, [email], fail_silently=False)
 
-        return JsonResponse({"success": "Votre compte a été créé avec succès.","token":str(token.access_token)}, status=201)
+        return JsonResponse({"success": "Votre compte a été créé avec succès.", "user_id":user.id,"token":str(token.access_token)}, status=201)
 
     return JsonResponse({"error": "Méthode non autorisée."}, status=405)
 
