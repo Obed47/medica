@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./formLogin.css";
 import eye from "../assets/eye.png";
@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { userIdentifier } from "../App";
 
 const FormLogin = () => {
+
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   const [pass, setPass] = useState("");
@@ -64,6 +65,8 @@ const FormLogin = () => {
         )
         .then((succ) => {
           console.log("Success posting data ", succ);
+          localStorage.setItem("user",`${succ.data.user_id + "," + username}`)        
+          navigate("/welcome");
         });
     } catch (error) {
       if (error.response) {
@@ -75,7 +78,13 @@ const FormLogin = () => {
   };
   const value = useContext(userIdentifier);
   console.log(value);
+  
+  useEffect(()=>{
+    localStorage.getItem("user") !== null ? navigate("/welcome") : pass
+  })
+
   return (
+  
     <div className="formLogin">
       <button onClick={() => console.log(value)}> click me</button>
       <h1>Create an account</h1>
@@ -98,7 +107,7 @@ const FormLogin = () => {
           className="lastName"
           id="lastName"
           placeholder="Last name"
-          required="true"
+          required
         />
 
         <input
@@ -177,7 +186,7 @@ const FormLogin = () => {
           type="button"
           onClick={() => {
             handlePost();
-            navigate("/welcome");
+            //navigate("/welcome");
           }}
         >
           Submit
