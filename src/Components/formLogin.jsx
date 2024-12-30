@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import { userIdentifier } from "../App";
 
 const FormLogin = () => {
-
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   const [pass, setPass] = useState("");
@@ -28,30 +27,17 @@ const FormLogin = () => {
     setVisible(!visible);
   };
 
-  const handlePost = () => {
-    console.log(
-      name,
-      surname,
-      pass,
-      startDate,
-      illnesses,
-      allergies,
-      email,
-      username,
-      pass,
-      confirmPass
-    );
-
+  const handlePost = async () => {
     try {
-      axios
+      await axios
         .post(
           "http://37.60.244.227:2000/register",
           {
             first_name: name,
             last_name: surname,
             date_naissance: startDate,
-            maladie_hereditaire: illnesses,
-            allergies: allergies,
+            maladie_hereditaire: illnesses || null,
+            allergies: allergies || null,
             add_email: email,
             username: username,
             password: pass,
@@ -65,28 +51,20 @@ const FormLogin = () => {
         )
         .then((succ) => {
           console.log("Success posting data ", succ);
-          localStorage.setItem("user",`${succ.data.user_id + "," + username}`)        
+          localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
           navigate("/welcome");
         });
     } catch (error) {
-      if (error.response) {
-        console.error("Erreur serveur :", error); // Message d'erreur fourni par le serveur
-      } else {
-        console.error("Erreur réseau :", error.message);
-      }
+      console.error("Error response:", error);
     }
   };
-  const value = useContext(userIdentifier);
-  console.log(value);
-  
-  useEffect(()=>{
-    localStorage.getItem("user") !== null ? navigate("/welcome") : pass
-  })
+
+  useEffect(() => {
+    localStorage.getItem("user") !== null ? navigate("/welcome") : pass;
+  });
 
   return (
-  
     <div className="formLogin">
-      <button onClick={() => console.log(value)}> click me</button>
       <h1>Create an account</h1>
       <h5>
         Already have an account ?<NavLink>Log in</NavLink>
@@ -99,7 +77,6 @@ const FormLogin = () => {
           className="firstName"
           id="firstName"
           placeholder="First name"
-          required
         />
         <input
           onChange={(e) => setSurname(e.target.value)}
@@ -107,7 +84,6 @@ const FormLogin = () => {
           className="lastName"
           id="lastName"
           placeholder="Last name"
-          required
         />
 
         <input
@@ -116,7 +92,6 @@ const FormLogin = () => {
           className="email"
           id="email"
           placeholder="Email"
-          required
         />
 
         <span>
@@ -126,7 +101,6 @@ const FormLogin = () => {
             className="password"
             id="password"
             placeholder="Enter your password"
-            required
           />
           <img
             onClick={() => handleSetVisible()}
@@ -141,7 +115,6 @@ const FormLogin = () => {
             className="password"
             id="password2"
             placeholder="Confirm Password"
-            required
           />
           <img
             onClick={() => handleSetVisible()}
@@ -155,13 +128,14 @@ const FormLogin = () => {
           className="userName"
           id="userName"
           placeholder="Choose a username"
-          required
         />
         <div className="calendarBox">
           <img src={calendarIcon} alt="" />
           <DatePicker
-            selected={startDate}
-            onChange={(date) => setStartDate(date.toISOString().split("T")[0])}
+            selected={new Date(startDate)}
+            onChange={(date) =>
+              setStartDate(new Date(date).toISOString().split("T")[0])
+            }
           />
           <h3>DOB</h3>
         </div>
@@ -186,7 +160,6 @@ const FormLogin = () => {
           type="button"
           onClick={() => {
             handlePost();
-            //navigate("/welcome");
           }}
         >
           Submit
