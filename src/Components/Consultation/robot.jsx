@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import robotImage from "../../assets/robot.png";
 import tick from "../../assets/tick.png";
 import "./robot.css";
@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 import Options from "./options";
 export default function Robot() {
   const [userId, setUserId] = useState("")
-  setUserId(parseInt(localStorage.getItem("user").split(',')[0]))
+  
+  useEffect(()=>{
+    setUserId(parseInt(localStorage.getItem("user").split(',')[0]))
+    console.log(typeof(userId))
+  })
 
   return (
     <div className="principalMain">
