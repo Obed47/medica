@@ -59,9 +59,9 @@ const FormLogin = () => {
     }
   };
 
-  useEffect(() => {
-    localStorage.getItem("user") !== null ? navigate("/welcome") : pass;
-  });
+  // useEffect(() => {
+  //   localStorage.getItem("user") !== null ? navigate("/welcome") : pass;
+  // });
 
   return (
     <div className="formLogin">
