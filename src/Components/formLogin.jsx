@@ -50,7 +50,7 @@ const FormLogin = () => {
           }
         )
         .then((succ) => {
-          console.log("Success posting data ", succ);
+          console.log("Success posting data ", succ.data);
           localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
           navigate("/welcome");
         });

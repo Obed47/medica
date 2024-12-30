@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import robotImage from "../../assets/robot.png";
 import tick from "../../assets/tick.png";
 import "./robot.css";
 import { Link } from "react-router-dom";
 import Options from "./options";
 export default function Robot() {
+  const [userId, setUserId] = useState("")
+  setUserId(parseInt(localStorage.getItem("user").split(',')[0]))
+
   return (
     <div className="principalMain">
       <Options />
@@ -19,7 +22,7 @@ export default function Robot() {
             Medica access your personal data for better performance
           </p>
         </div>
-        <Link to={"http://37.60.244.227:2002/params?id=1"}>
+        <Link to={`http://37.60.244.227:2002/params?id=${userId}`}>
           <button className="Button"> Get Consuted</button>
         </Link>
       </div>
