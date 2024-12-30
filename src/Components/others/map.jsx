@@ -51,7 +51,7 @@ export default function MapComp() {
         <button className="backButton" onClick={() => navigate("/toChatbot")}>
           Back
         </button>{" "}
-        //map details and implementation here
+        {/* map details and implementation here */}
       </div>
     </div>
   );

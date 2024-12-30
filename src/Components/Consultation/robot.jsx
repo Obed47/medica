@@ -2,6 +2,7 @@ import React from "react";
 import robotImage from "../../assets/robot.png";
 import tick from "../../assets/tick.png";
 import "./robot.css";
+import { Link } from "react-router-dom";
 import Options from "./options";
 export default function Robot() {
   return (
@@ -18,7 +19,9 @@ export default function Robot() {
             Medica access your personal data for better performance
           </p>
         </div>
-        <button className="Button"> Get Consuted</button>
+        <Link to={"http://37.60.244.227:2002/params?id=1"}>
+          <button className="Button"> Get Consuted</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./consultationHistory.css";
 import PastConsultation from "./pastConsultation";
-import axios from "axios";
+import axios from "axios"; 
 import { userIdentifier } from "../../App";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
