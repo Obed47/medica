@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./consultationHistory.css";
 import PastConsultation from "./pastConsultation";
-import axios from "axios"; 
+import axios from "axios";
 import { userIdentifier } from "../../App";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
@@ -13,16 +13,14 @@ const ConsultationHistory = () => {
   })
 
   const userId = useContext(userIdentifier);
-  console.log(userId);
   const FetchData = () => {
     axios
       //
-      .get(`37.60.244.227:2002/api/consultation/${idUser}`)
+      .get(`37.60.244.227:2001/api/consultations/?id=${idUser}`)
       .then((res) => {
         setConsultation(res.data);
         console.log(consultation);
       })
-
       .catch((err) => {
         console.log(err);
       });
@@ -30,14 +28,12 @@ const ConsultationHistory = () => {
   useEffect(() => {
     FetchData();
   }, []);
-  useEffect(() => {
-    console.log(consultation);
-  }, [consultation]);
+
   return (
     <div className="consultationHistory">
       <h3>Consultation History</h3>
       <h5>
-        History about past consultation in{" "}
+        History about past consultations in
         <span style={{ fontWeight: "bold" }}>read only</span>
       </h5>
 

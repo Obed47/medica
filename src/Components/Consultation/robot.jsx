@@ -1,16 +1,16 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import robotImage from "../../assets/robot.png";
 import tick from "../../assets/tick.png";
 import "./robot.css";
 import { Link } from "react-router-dom";
 import Options from "./options";
 export default function Robot() {
-  const [userId, setUserId] = useState("")
-  
-  useEffect(()=>{
-    setUserId(parseInt(localStorage.getItem("user").split(',')[0]))
-    console.log(typeof(userId))
-  })
+  const [userId, setUserId] = useState("");
+
+  useEffect(() => {
+    setUserId(parseInt(localStorage.getItem("user").split(",")[0]));
+    console.log(typeof userId);
+  });
 
   return (
     <div className="principalMain">
@@ -26,7 +26,7 @@ export default function Robot() {
             Medica access your personal data for better performance
           </p>
         </div>
-        <Link to={`http://37.60.244.227:2003/params?id=${userId}`}>
+        <Link to={`http://37.60.244.227:2002/params?id=${userId}`}>
           <button className="Button"> Get Consuted</button>
         </Link>
       </div>
