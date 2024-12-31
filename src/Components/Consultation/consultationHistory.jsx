@@ -5,12 +5,19 @@ import axios from "axios";
 import { userIdentifier } from "../../App";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
+  const [idUser, setIdUser] = useState("")
+  
+  useEffect(()=>{
+    setIdUser(parseInt(localStorage.getItem("user").split(',')[0]))
+    console.log(typeof(idUser))
+  })
+
   const userId = useContext(userIdentifier);
   console.log(userId);
   const FetchData = () => {
     axios
       //
-      .get("192.168.43.156/api/consultation")
+      .get(`37.60.244.227:2002/api/consultation/${idUser}`)
       .then((res) => {
         setConsultation(res.data);
         console.log(consultation);
