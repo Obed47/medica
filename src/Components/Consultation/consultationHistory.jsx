@@ -2,13 +2,17 @@ import React, { useContext, useEffect, useState } from "react";
 import "./consultationHistory.css";
 import PastConsultation from "./pastConsultation";
 import axios from "axios";
-import { userIdentifier } from "../../App";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
-  const userId = useContext(userIdentifier);
+
   const FetchData = () => {
+    const userIdentifier = localStorage.getItem("userId");
+    const userId = JSON.parse(userIdentifier);
+    console.log(userId);
     axios
-      .get("http://37.60.244.227:2000/api/consultations")
+      .get(
+        `http://medica.smartcloudservices.cloud/consultation/api/consultations/?id=${userId}`
+      )
       .then((response) => {
         setConsultation(response.data);
         console.log("success fetching ", consultation);

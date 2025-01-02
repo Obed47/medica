@@ -8,8 +8,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import calendarIcon from "../assets/calendar.svg";
 import { useNavigate } from "react-router-dom";
-import { userIdentifier } from "../App";
-
 const FormLogin = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
@@ -31,7 +29,7 @@ const FormLogin = () => {
     try {
       await axios
         .post(
-          "http://37.60.244.227:2000/register",
+          "http://medica.smartcloudservices.cloud/auth/register",
           {
             first_name: name,
             last_name: surname,
@@ -51,7 +49,8 @@ const FormLogin = () => {
         )
         .then((succ) => {
           console.log("Success posting data ", succ.data);
-          localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
+          //localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
+          localStorage.setItem("userId", JSON.stringify(succ.data.user_id));
           navigate("/welcome");
         });
     } catch (error) {
@@ -61,7 +60,7 @@ const FormLogin = () => {
 
   // useEffect(() => {
   //   localStorage.getItem("user") !== null ? navigate("/welcome") : pass;
-  // });
+  // },[]);
 
   return (
     <div className="formLogin">
