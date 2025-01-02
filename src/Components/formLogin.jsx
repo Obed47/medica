@@ -7,6 +7,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import calendarIcon from "../assets/calendar.svg";
+import Spinner from "../Spinner";
 import { useNavigate } from "react-router-dom";
 const FormLogin = () => {
   const navigate = useNavigate();
@@ -20,42 +21,46 @@ const FormLogin = () => {
   const [startDate, setStartDate] = useState(new Date(2000, 9, 1));
   const [allergies, setAllergies] = useState("");
   const [illnesses, setIllnesses] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSetVisible = () => {
     setVisible(!visible);
   };
 
   const handlePost = async () => {
-    try {
-      await axios
-        .post(
-          "http://medica.smartcloudservices.cloud/auth/register",
-          {
-            first_name: name,
-            last_name: surname,
-            date_naissance: startDate,
-            maladie_hereditaire: illnesses || null,
-            allergies: allergies || null,
-            add_email: email,
-            username: username,
-            password: pass,
-            password1: confirmPass,
+    setLoading(true);
+    await axios
+      .post(
+        "http://medica.smartcloudservices.cloud/auth/register",
+        {
+          first_name: name,
+          last_name: surname,
+          date_naissance: startDate,
+          maladie_hereditaire: illnesses || null,
+          allergies: allergies || null,
+          add_email: email,
+          username: username,
+          password: pass,
+          password1: confirmPass,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
           },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        )
-        .then((succ) => {
-          console.log("Success posting data ", succ.data);
-          //localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
-          localStorage.setItem("userId", JSON.stringify(succ.data.user_id));
-          navigate("/welcome");
-        });
-    } catch (error) {
-      console.error("Error response:", error);
-    }
+        }
+      )
+      .then((succ) => {
+        console.log("Success posting data ", succ.data);
+        //localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
+        localStorage.setItem("userId", JSON.stringify(succ.data.user_id));
+        navigate("/welcome");
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   // useEffect(() => {
@@ -153,16 +158,16 @@ const FormLogin = () => {
             id="deseases"
             placeholder="Deseases"
           />
+          <div className="w-full">
+            {loading ? (
+              <Spinner />
+            ) : (
+              <button className="w-full" type="button" onClick={handlePost}>
+                Submit
+              </button>
+            )}
+          </div>
         </div>
-
-        <button
-          type="button"
-          onClick={() => {
-            handlePost();
-          }}
-        >
-          Submit
-        </button>
       </form>
     </div>
   );
