@@ -63,10 +63,6 @@ const FormLogin = () => {
       });
   };
 
-  // useEffect(() => {
-  //   localStorage.getItem("user") !== null ? navigate("/welcome") : pass;
-  // },[]);
-
   return (
     <div className="formLogin">
       <h1>Create an account</h1>
@@ -162,7 +158,7 @@ const FormLogin = () => {
             {loading ? (
               <Spinner />
             ) : (
-              <button className="w-full" type="button" onClick={handlePost}>
+              <button className="w-full " type="button" onClick={handlePost}>
                 Submit
               </button>
             )}
