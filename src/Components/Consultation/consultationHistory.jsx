@@ -4,7 +4,6 @@ import PastConsultation from "./pastConsultation";
 import axios from "axios";
 const ConsultationHistory = () => {
   const [consultation, setConsultation] = useState([]);
-
   const FetchData = () => {
     const userIdentifier = localStorage.getItem("userId");
     const userId = JSON.parse(userIdentifier);
