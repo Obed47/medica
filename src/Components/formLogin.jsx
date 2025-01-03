@@ -51,7 +51,7 @@ const FormLogin = () => {
       )
       .then((succ) => {
         console.log("Success posting data ", succ.data);
-        //localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
+        localStorage.setItem("user", `${succ.data.user_id + "," + username}`);
         localStorage.setItem("userId", JSON.stringify(succ.data.user_id));
         navigate("/welcome");
       })
@@ -62,6 +62,10 @@ const FormLogin = () => {
         setLoading(false);
       });
   };
+  useEffect(()=>{
+    let id = localStorage.getItem("user")
+    id !== null ? navigate("welcome") : "";
+  })
 
   return (
     <div className="formLogin">

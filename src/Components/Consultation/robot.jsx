@@ -7,8 +7,8 @@ import Options from "./options";
 export default function Robot() {
   const [userId, setUserId] = useState("");
   useEffect(() => {
-    const userIdentifier = localStorage.getItem("userId");
-    const userid = JSON.parse(userIdentifier);
+    const userIdentifier = localStorage.getItem("user").split(",")[0];
+    const userid = userIdentifier;
     setUserId(userid);
     console.log("User id: ", userId);
   }, []);
