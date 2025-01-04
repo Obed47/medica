@@ -19,7 +19,7 @@ const GetSymptoms = () => {
   };
   const sendToback = () => {
     axios
-      .patch("http://192.168.1.101:8001/update-profile/", {
+      .patch("https://192.168.1.101:8001/update-profile/", {
         maladie_hereditaire: allIllnesses,
         allergies: allAllergies,
       })

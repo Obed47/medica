@@ -13,6 +13,11 @@ export default function Robot() {
     console.log("User id: ", userId);
   }, []);
 
+  const openRobot = (userId)=>{
+    window.open(`https://medica.smartcloudservices.cloud/medica/params?id=${userId}`,'_blank')
+  }
+
+
   return (
     <div className="principalMain">
       <Options />
@@ -27,11 +32,13 @@ export default function Robot() {
             Medica access your personal data for better performance
           </p>
         </div>
-        <Link
-          to={`http://medica.smartcloudservices.cloud/medica/params?id=${userId}`}
-        >
-          <button className="Button"> Get Consuted</button>
-        </Link>
+        {/*<Link
+          to={`https://medica.smartcloudservices.cloud/medica/params?id=${userId}`}
+        >*/}
+          <button className="Button" onclick={openRobot(userId)}
+          
+          > Get Consuted</button>
+        {/*</Link>*/}
       </div>
     </div>
   );

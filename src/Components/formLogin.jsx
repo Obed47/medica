@@ -31,7 +31,7 @@ const FormLogin = () => {
     setLoading(true);
     await axios
       .post(
-        "http://medica.smartcloudservices.cloud/auth/register",
+        "https://medica.smartcloudservices.cloud/auth/register",
         {
           first_name: name,
           last_name: surname,

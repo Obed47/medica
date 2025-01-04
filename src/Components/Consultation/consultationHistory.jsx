@@ -10,7 +10,7 @@ const ConsultationHistory = () => {
     console.log(userId);
     axios
       .get(
-        `http://medica.smartcloudservices.cloud/consultation/api/consultations/?id=${userId}`
+        `https://medica.smartcloudservices.cloud/consultation/api/consultations/?id=${userId}`
       )
       .then((response) => {
         setConsultation(response.data);
